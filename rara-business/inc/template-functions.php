@@ -1,10 +1,22 @@
 <?php
+
+if( ! function_exists( 'appendNavSearchForm' ) ) :
+function appendNavSearchForm($nav, $searchform) {
+    $boxed_form = '<li class="mega-menu-item">' . $searchform  . '</li>';
+    $offset = strrpos($nav, '</ul>');
+
+    $begin = substr($nav, 0, $offset);
+    $end = substr($nav, $offset);
+
+    return $begin . $boxed_form . $end; 
+}
+endif;
+
 /**
  * Template Functions which enhance the theme by hooking into WordPress
  *
  * @package Rara_Business
  */
-
 if( ! function_exists( 'rara_business_doctype' ) ) :
 /**
  * Doctype Declaration
@@ -49,7 +61,8 @@ add_action( 'rara_business_before_header', 'rara_business_page_start', 20 );
 
 if( ! function_exists( 'rara_business_header' ) ) :
 /**
- * Header Start
+ * Header Start 
+ * tip for arnan, this would be override by child theme
 */
 function rara_business_header(){ 
     $default_options = rara_business_default_theme_options(); // Get default theme options
@@ -117,12 +130,16 @@ function rara_business_header(){
 
 	<nav id="site-navigation" class="main-navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
         <?php
-            wp_nav_menu( array(
+            $nav_menu = wp_nav_menu( array(
                 'theme_location' => 'primary',
                 'menu_id'        => 'primary-menu',
                 'fallback_cb'    => 'rara_business_primary_menu_fallback',
+                'echo' => false
             ) );
-        ?>
+
+            $searchform = get_search_form(false);
+            echo appendNavSearchForm($nav_menu, $searchform);
+        ?>11
     </nav><!-- #site-navigation -->
     <header id="masthead" class="site-header" itemscope itemtype="http://schema.org/WPHeader">
         <?php 

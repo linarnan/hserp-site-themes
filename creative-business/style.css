@@ -518,7 +518,6 @@ a:focus {
 .our-clients {
     margin: 40px 0 0;
     padding: 20px 0;
-    background: rgba(var(--primary-color-rgb), 0.05);
 }
 
 .our-clients .widget .raratheme-client-logo-inner-holder {
@@ -1548,4 +1547,39 @@ a:focus {
 #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item.mega-current-menu-ancestor.mega-current_page_ancestor>a.mega-menu-link,
 #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item.mega-current-page-ancestor.mega-current_page_item>a.mega-menu-link {
     color: var(--primary-color);
+}
+
+
+/**
+  *  search form on mega menu 
+  */
+.mega-menu form.searchform {
+    /*border: 1px solid #ccc;*/
+}
+
+.mega-menu form.searchform input[type='text'] {
+    width: 0;
+    padding: 0;
+    border-radius: 0;
+    border: 0;
+    border-color: #ccc;
+    user-select: none;
+}
+
+.mega-menu form.searchform input[type='text']:focus {
+    outline: none;
+}
+
+.mega-menu form.searchform button {
+    padding: 0;
+    border: 0;
+    background: none;
+    color: #999;
+    font-size: 1em;
+}
+
+.mega-menu form.searchform.hover input {
+    width: 120px;
+    border: 1px solid #ccc;
+    transition: 1.6s;
 }

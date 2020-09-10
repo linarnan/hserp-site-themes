@@ -1,4 +1,15 @@
 <?php
+if( ! function_exists( 'appendNavSearchForm' ) ) :
+function appendNavSearchForm($nav, $searchform){
+        $boxed_form = '<li class="mega-menu-item">' . $searchform  . '</li>';
+        $offset = strrpos($nav, '</ul>');
+    
+        $begin = substr($nav, 0, $offset);
+        $end = substr($nav, $offset);
+    
+        return $begin . $boxed_form . $end; 
+}
+endif;
 /**
  * Theme functions and definitions
  *
@@ -81,7 +92,9 @@ function creative_business_fonts_url(){
 function creative_business_customizer_script(){
     wp_enqueue_script( 'creative-business-customize-controls', get_stylesheet_directory_uri() . '/inc/js/customize-controls.js', array( 'jquery', 'customize-controls' ), false, true  );
 }
-add_action( 'customize_controls_enqueue_scripts', 'creative_business_customizer_script', 11 );
+//add_action( 'customize_controls_enqueue_scripts', 'creative_business_customizer_script', 11 );
+add_action( 'wp_enqueue_scripts', 'creative_business_customizer_script', 11 );
+
 
 /**
  * Creative Business Header Image
@@ -160,7 +173,6 @@ function rara_business_header(){
                             ) );
                         ?>
                     </nav><!-- #site-navigation -->
-                    
                     <?php 
                         if( $link && $label ) rara_business_custom_link( $icon, $link, $label );
                     ?>
@@ -206,11 +218,14 @@ function rara_business_header(){
                 <div class="right">
                     <nav id="site-navigation" class="main-navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
                     <?php
-                        wp_nav_menu( array(
+                        $nav_menu = wp_nav_menu( array(
                             'theme_location' => 'primary',
                             'menu_id'        => 'primary-menu',
                             'fallback_cb'    => 'rara_business_primary_menu_fallback',
+                            'echo' => false
                         ) );
+                        $search_form = get_search_form( false);
+                        echo appendNavSearchForm($nav_menu, $search_form);
                     ?>
 					</nav><!-- #site-navigation -->
                 </div>
@@ -368,4 +383,4 @@ function add_numscroller_scripts()
 {
   wp_enqueue_script('numscroller', get_template_directory_uri() . '/js/numscroller-1.0.js',array ('jquery'),false,false);
 }
-add_action('wp_enqueue_scripts', 'add_numscroller_scripts');
+add_action('wp_enqueue_scripts', 'add_numscroller_scripts', 30);
