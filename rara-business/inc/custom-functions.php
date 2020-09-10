@@ -111,6 +111,11 @@ function rara_business_setup() {
                 'post_type'  => 'page',
                 'post_title' => 'Portfolio',
                 'template'   => 'templates/portfolio.php',
+            ),
+            'product-intro' => array(
+                'post_type'  => 'page',
+                'post_title' => 'Product',
+                'template'   => 'templates/product-intro.php',
             )
         ),
         
@@ -160,6 +165,9 @@ function rara_business_content_width() {
     $GLOBALS['content_width'] = apply_filters( 'rara_business_content_width', 770 );
 }
 add_action( 'after_setup_theme', 'rara_business_content_width', 0 );
+
+
+
 
 /**
  * Enqueue scripts and styles.

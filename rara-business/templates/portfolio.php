@@ -4,23 +4,20 @@
  *
  * @package Rara_Business
  */
-get_header(); 
+get_header('product-intro'); 
 
-    $args = array(
-        'post_type'      => 'rara-portfolio',
-        'post_status'    => 'publish',
-        'posts_per_page' => -1,
-    );
+while ( have_posts() ) : the_post();
 
-    $qry = new WP_Query( $args );
+	get_template_part( 'template-parts/content', 'page' );
+	
+	/**
+	 * Comment Template
+	 * 
+	 * @hooked rara_business_comment
+	*/
+	do_action( 'rara_business_after_page_content' );
 
-    if( $qry->have_posts() ){ ?>
-        <div class="portfolio-holder">
-            <?php 
-                rara_business_get_portfolio_buttons( '-1' );
-                rara_business_get_portfolios( '-1' );
-            ?>
-        </div>
-    <?php }
+endwhile; // End of the loop.
+
 
 get_footer();

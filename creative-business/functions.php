@@ -41,6 +41,14 @@ function creative_business_enqueue_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'creative_business_enqueue_styles' );
 
+function hs_product_intro_enqueue_styles() {
+    $my_theme = wp_get_theme();
+    $version = $my_theme['Version'];
+    
+    wp_enqueue_style( 'style-product-intro', get_template_directory_uri() . '/style-product-intro.css', array( 'rara-business-style' ), $version );
+}
+add_action( 'wp_enqueue_scripts', 'hs_product_intro_enqueue_styles', 40 );
+
 /**
  * Register custom fonts.
  */

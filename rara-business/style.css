@@ -2890,8 +2890,8 @@ TAXONOMY PORTFOLIO CATEGORY
 
 .blog-section {
     margin: 0;
-	padding: 30px;
-	background-color: #999;
+    padding: 30px;
+    background-color: #999;
 }
 
 .blog-section .widget {
@@ -2900,15 +2900,15 @@ TAXONOMY PORTFOLIO CATEGORY
 
 .blog-section .section-header {
     margin: 30px;
-	position: relative;
+    position: relative;
 }
 
 .blog-section .section-header .widget_text .widget-title {
     font-weight: 700;
     margin: 0 0 15px;
     line-height: 1.130em;
-	color: #fff;
-	font-family: NotoSansCJKtc;
+    color: #fff;
+    font-family: 'Noto Sans TC';
 }
 
 .blog-section .section-header .widget_text .textwidget {
@@ -3081,7 +3081,7 @@ TAXONOMY PORTFOLIO CATEGORY
     color: #fff;
 }
 
-.cta .widget .btn-cta:focus{
+.cta .widget .btn-cta:focus {
     outline: thin dotted #fff;
     outline-offset: 2px;
 }
@@ -3118,11 +3118,11 @@ TAXONOMY PORTFOLIO CATEGORY
 
 .faq-section {
     margin: 50px 0 0 0;
-	padding: 50px 0 30px 0;
+    padding: 50px 0 30px 0;
 }
 
 #faq-section {
-	background-color: #999;
+    background-color: #999;
 }
 
 .faq-section .widget {
@@ -3518,7 +3518,7 @@ TAXONOMY PORTFOLIO CATEGORY
     margin: 0 0 45px;
 }
 
-#primary .site-main article .post-thumbnail:focus{
+#primary .site-main article .post-thumbnail:focus {
     outline-offset: 2px;
 }
 
@@ -5381,7 +5381,8 @@ WIDGET CALENDAR
     padding: 5px;
     border: 1px solid #0aa3f3;
 }
-.widget_calendar .wp-calendar-nav{
+
+.widget_calendar .wp-calendar-nav {
     display: flex;
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
@@ -5391,35 +5392,41 @@ WIDGET CALENDAR
     border: 1px solid #0aa3f3;
     border-top: none;
 }
-.widget_calendar .wp-calendar-nav span{
+
+.widget_calendar .wp-calendar-nav span {
     font-size: 16px;
     font-weight: 600;
     padding: 5px 20px;
     display: inline-block;
 }
-.widget_calendar .wp-calendar-nav span.wp-calendar-nav-prev{
+
+.widget_calendar .wp-calendar-nav span.wp-calendar-nav-prev {
     width: 40%;
     border-right: 1px solid #0aa3f3;
     text-align: left;
 }
-.widget_calendar .wp-calendar-nav span.wp-calendar-nav-next{
+
+.widget_calendar .wp-calendar-nav span.wp-calendar-nav-next {
     width: 40%;
     border-left: 1px solid #0aa3f3;
     text-align: right;
 }
+
 footer .widget_calendar table tr th,
 footer .widget_calendar table tr td,
 footer .widget_calendar .wp-calendar-nav,
 footer .widget_calendar .wp-calendar-nav span.wp-calendar-nav-prev,
-footer .widget_calendar .wp-calendar-nav span.wp-calendar-nav-next{
-    border-color: rgba(255,255,255,1);
+footer .widget_calendar .wp-calendar-nav span.wp-calendar-nav-next {
+    border-color: rgba(255, 255, 255, 1);
 }
-footer .widget_calendar a{
+
+footer .widget_calendar a {
     color: #FFF;
-    text-shadow: 0 0 2px rgba(0,0,0,0.2);
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
 }
+
 footer .widget_calendar .wp-calendar-nav span.wp-calendar-nav-prev a:hover,
-footer .widget_calendar .wp-calendar-nav span.wp-calendar-nav-next a:hover{
+footer .widget_calendar .wp-calendar-nav span.wp-calendar-nav-next a:hover {
     color: #FFF;
 }
 
@@ -5598,7 +5605,7 @@ WIDGET FAQ
 }
 
 .widget_raratheme_companion_faqs_widget .accordion li .toggle {
-    word-break: normal;    
+    word-break: normal;
 }
 
 #secondary .widget_raratheme_companion_faqs_widget .accordion li .toggle:after {
@@ -6776,21 +6783,24 @@ RARATHEME SOCIAL ICON WIDGET
         width: 100%;
         margin-right: 0;
     }
-    .banner .banner-text{
+
+    .banner .banner-text {
         -webkit-transform: translate(0, -12%);
         -moz-transform: translate(0, -12%);
         -ms-transform: translate(0, -12%);
         -o-transform: translate(0, -12%);
         transform: translate(0, -12%);
     }
+
     .banner .banner-text .btn-holder .btn-view-service,
-    .banner .banner-text .btn-holder .btn-free-inquiry{
+    .banner .banner-text .btn-holder .btn-free-inquiry {
         min-width: unset;
         padding: 10px 20px;
         font-size: 14px;
         margin: 0 10px 10px;
     }
-    .homepage.hasbanner .site-header .header-t a{
+
+    .homepage.hasbanner .site-header .header-t a {
         font-size: 14px;
     }
 
