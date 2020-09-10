@@ -34,7 +34,6 @@ jQuery(document).ready(function ($) {
     // wp.customize.section('sidebar-widgets-faq').priority('100');
 
     $(window).scroll(function () {
-        console.log('hihi');
         $('.mega-toggle-on').removeClass('.mega-toggle-on');
     });
 
