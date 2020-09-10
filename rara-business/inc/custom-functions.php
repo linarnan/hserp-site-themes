@@ -99,6 +99,7 @@ function rara_business_setup() {
     add_image_size( 'rara-business-blog', 370, 240, true );
     add_image_size( 'rara-business-portfolio', 370, 370, true );
     add_image_size( 'rara-business-schema', 600, 60 );
+    add_image_size( 'hs-news-summary-thumbnail', 160, 120, true);
     
     /** Starter Content */
     $starter_content = array(

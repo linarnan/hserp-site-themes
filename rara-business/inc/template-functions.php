@@ -27,6 +27,7 @@ function rara_business_head(){
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADvEAAA8BEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAO/xIABvt2AAX2vQAG/MUABvzGAAX4vgAG+XsAAP8VAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE80IABPvWAAb90gAF9pQACPdjAAj3YgAF9ZIABv3PAAT72gAH+EkAAAAAAAAAAAAAAAAAAAAAAAAAAAAE9z4ABfrvAAX8lAAA8xUAAAAAAAAAAAAAAAAAAAAAAAD/EgAF+44ABvvyAAT4RwAAAAAAAAAAAAAAAAAA/xAABPrWAAX8lgAAAAAAAAAAAAAAAAAA/wEAAAAAAAAAAAAAAAAAAAAAAAX6jgAD+dwADPMVAAAAAAAAAAAABPRyAAb71AAA6xkABvWGAAP8mwAG+SoADvESAAP4mwAF/JMACPcfAAAAAAAA6AsABvvUAAb3fAAAAAAAAAAAAAX1ugAF9ZUAAAAAAAb1ngAH//8ABPmtAADbBwAG9rMAB///AAf4lgAAAAAAAAAAAAX2lAAF+ccAAL8EAADmCgAG/MUAB/ZsAAAAAAAG7CkAB/zqAAX4+AAF9m8AB/zEAAf//wAG+e8ABvksAAAAAAAH+EsACPydABTrDQAA/wkAB/zEAAf2bQAAAAAAAAAAAAX2kQAH//8ABffGAAX3YQAF88cABv//AAf6mgAAAAAAAP8KAAj3IQAAqgMAAAAAAAb3twAD9ZoAAAAAAAAAAAAH+CQAA/zdAAb78gAF7y8ABfQvAAf66gAG++4AB/gnAAj3QAAH/JsAANsOAAAAAAAF9WoAA/rcAADmFAAAAAAAAAAAAAjwIQAI/0AAB/gjAAAAAAAG8ykACP9BAAv/GAAA8hMABfoxAAD/AwAAAAAAAP8MAAb4zgAG+p0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF9TUABvnnAAf4nAAA9hwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAX6MgAG+8wABv3TAAP1nwAH+moAAPMVAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8LAAf6ZwAG+bUAB/zCAAb2UgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/CwAA/wwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAPw/AADxjwAA5+cAAM/zAADTOwAAkRkAALkdAAC4jwAAnM0AAN//AADP/wAA5/8AAPH/AAD8/wAA//8AAA==" />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=NotoSansCJKtc&display=swap" rel="stylesheet">
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <?php
 }
@@ -291,29 +292,60 @@ if( ! function_exists( 'rara_business_content_start' ) ) :
  * Content Start
 */
 function rara_business_content_start(){
-    if( is_home() ) {
-        echo '<div class="blog-banner"><div class="news h1-title">最新消息</div></div>';
-    }
+
     echo '<div id="acc-content">'; // added for accessibility purpose
     $home_sections = rara_business_get_home_sections();
 
     if( !( is_front_page() && ! is_home() && $home_sections ) ){ ?>
 	<div id="content" class="site-content">
         <div class="container">
-        <?php   
-        if( is_home() ) {
-            echo '<div class="category-container">';
-            echo '<div class="categories"><a href="'.site_url().'/news/" class="active">全部</a></div>';
-            rara_business_categories();
-            echo '</div>';
+        <?php
+        if(is_home() || is_archive() || is_category() ){ 
+            //the_archive_title( '<h1 class="page-title">', '</h1>' );
+            //the_archive_description( '<div class="archive-description">', '</div>' );
+            do_action('hs_show_categories');
         }
-        if( ! ( is_front_page() && ! is_home() ) && ! is_home() && ! is_search() && ! is_archive() ) rara_business_breadcrumb();
-        if( ! is_search() && ! is_archive() && ! is_home() && ! ( is_single() && 'post' === get_post_type() ) ) rara_business_page_header();
+
+        //if( ! ( is_front_page() && ! is_home() ) && ! is_home() && ! is_search() && ! is_archive() ) rara_business_breadcrumb();
+        if( ! is_search() && ! ( is_single() && 'post' === get_post_type() ) ) rara_business_page_header();
         if( ! is_404() && ! is_page_template( 'templates/portfolio.php' ) && ! is_tax( 'rara_portfolio_categories' ) ) echo '<div class="content-grid">';
     }
 }
 endif;
 add_action( 'rara_business_content', 'rara_business_content_start' );
+
+//customize by arnan
+if( ! function_exists( 'hs_posts_banner' ) ) :
+    /**
+     * Breadcrumbs
+    */
+function hs_posts_banner() {
+    if( (is_home() || is_archive()) ) {//customize by arnan
+        echo '<div class="blog-banner"><div class="news h1-title">最新消息</div></div>';
+    }
+}
+endif;
+add_action( 'rara_business_after_header', 'hs_posts_banner', 15 );
+
+
+//customize by arnan
+if( ! function_exists( 'hs_posts_categories' ) ) :
+    /**
+     * Breadcrumbs
+    */
+function hs_posts_categories() {
+    if( is_home() || is_archive() || is_category() ) {
+        echo '<div class="category-container">';
+        echo '<div class="categories"><a href="'.site_url().'/news/" class="active">全部</a></div>';
+        rara_business_categories();
+        echo '</div>';
+    }
+}
+endif;
+add_action( 'hs_show_categories', 'hs_posts_categories');
+
+
+
 
 if( ! function_exists( 'rara_business_breadcrumb' ) ) :
 /**
@@ -619,7 +651,18 @@ function rara_business_breadcrumb() {
     }
 }
 endif;
-add_action( 'rara_business_before_posts_content', 'rara_business_breadcrumb', 15 );
+//add_action( 'rara_business_after_header', 'rara_business_breadcrumb', 30 );
+
+//customize by arnan
+if( ! function_exists( 'rara_business_breadcrumb_conditional' ) ) :
+
+function rara_business_breadcrumb_conditional(){
+    if( ! ( is_front_page() && ! is_home() ) && ! is_home() && ! is_search() && ! is_archive() ) rara_business_breadcrumb();
+}
+
+endif;
+add_action( 'rara_business_after_header', 'rara_business_breadcrumb_conditional', 30 );
+
 
 if( ! function_exists( 'rara_business_page_header' ) ) :
 /**
@@ -645,11 +688,7 @@ function rara_business_page_header(){
         </span>
         <?php get_search_form();
     }
-    
-    if( is_archive() ){ 
-        the_archive_title( '<h1 class="page-title">', '</h1>' );
-        the_archive_description( '<div class="archive-description">', '</div>' );
-    }
+
     
     if( is_page() ){ 
         if( is_page_template( 'templates/portfolio.php' ) ){
@@ -668,6 +707,49 @@ function rara_business_page_header(){
 }
 endif;
 add_action( 'rara_business_before_posts_content', 'rara_business_page_header', 20 );
+
+
+//customized by arnan
+if( ! function_exists( 'rara_business_posts_entry' ) ) :
+/**
+ * Posts list
+*/
+function rara_business_posts_entry() { 
+    $default_options     = rara_business_default_theme_options(); // Get default theme options
+    $show_post_thumbnail = get_theme_mod( 'ed_featured_image', $default_options['ed_featured_image'] );
+
+    $default_options = rara_business_default_theme_options(); // Get default theme options
+    $hide_date       = get_theme_mod( 'ed_post_date_meta', $default_options['ed_post_date_meta'] );
+    $hide_author     = get_theme_mod( 'ed_post_author_meta', $default_options['ed_post_author_meta'] );
+?>
+    <div class="post-item-summary"><!-- .entry-header -->
+        <div class="post-thumbnail-container">
+            <div class="img-center-box">
+            <?php
+                the_post_thumbnail( 'hs-news-summary-thumbnail', array(
+                    'alt' => the_title_attribute( array(
+                        'echo' => false,
+                    ) ),
+                ) );
+            ?>
+            </div>
+        </div>
+        <div class="post-content">
+            <?php
+                the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+            ?>
+            <div class="post-excerpt"><?php echo wp_trim_excerpt();?></div>
+        </div>
+        <div class="post-meta">
+            <div class="entry-meta"><?php rara_business_posted_on();?></div>
+            <div class="category"><?php rara_business_categories();?></div>
+        </div>
+	</div><!-- .entry-header -->
+<?php
+}
+endif;
+add_action( 'rara_business_posts_entry_content', 'rara_business_posts_entry', 15 );
+
 
 if( ! function_exists( 'rara_business_entry_header' ) ) :
 /**
@@ -702,7 +784,7 @@ function rara_business_entry_header(){
     <?php
 }
 endif;
-add_action( 'rara_business_posts_entry_content', 'rara_business_entry_header', 15 );
+//add_action( 'rara_business_posts_entry_content', 'rara_business_entry_header', 15 );
 add_action( 'rara_business_post_entry_content', 'rara_business_entry_header', 20 );
 
 if ( ! function_exists( 'rara_business_post_thumbnail' ) ) :
@@ -738,7 +820,7 @@ function rara_business_post_thumbnail() {
 	<?php }; // End is_singular().
 }
 endif;
-add_action( 'rara_business_posts_entry_content', 'rara_business_post_thumbnail', 20 );
+//add_action( 'rara_business_posts_entry_content', 'rara_business_post_thumbnail', 20 );
 add_action( 'rara_business_page_entry_content', 'rara_business_post_thumbnail', 15 );
 add_action( 'rara_business_post_entry_content', 'rara_business_post_thumbnail', 15 );
 
@@ -766,7 +848,7 @@ function rara_business_entry_content(){
     <?php
 }
 endif;
-add_action( 'rara_business_posts_entry_content', 'rara_business_entry_content', 25 );
+//add_action( 'rara_business_posts_entry_content', 'rara_business_entry_content', 25 );
 add_action( 'rara_business_page_entry_content', 'rara_business_entry_content', 20 );
 add_action( 'rara_business_post_entry_content', 'rara_business_entry_content', 25 );
 

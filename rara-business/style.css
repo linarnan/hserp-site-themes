@@ -3673,10 +3673,6 @@ TAXONOMY PORTFOLIO CATEGORY
     grid-column: 1 / span 3;
 }
 
-.full-width #primary .post {
-    text-align: center;
-}
-
 .full-width #primary .post .entry-footer .btn-readmore {
     float: none;
     display: inline-block;
