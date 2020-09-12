@@ -21,7 +21,6 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
 
 :root {
     --primary-color: #ff0000;
@@ -32,6 +31,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
     --primary-font: 'Noto Sans TC', 'Open Sans', sans-serif;
     --secondary-font: 'Source Sans Pro', sans-serif;
     --font-color: #595f5f;
+    --emphasis-number-font: 'Rubik';
 }
 
 body {
@@ -1150,7 +1150,7 @@ a:focus {
 .count-container .num {
     font-size: 52px;
     font-weight: 700;
-    font-family: 'Pacifico', cursive;
+    font-family: var(--emphasis-number-font), cursive;
     color: var(--primary-color);
 }
 
@@ -1158,6 +1158,63 @@ a:focus {
     font-size: 14px;
     margin-top: 16px;
 }
+
+
+.office-container h2 {
+    margin-left: 35px;
+}
+
+.office-container h3 {
+    font-weight: 400;
+    border-bottom: 1px solid #ccc;
+    margin-right: 50px;
+}
+
+.offices {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.office {
+    flex: 0 0 23%;
+    margin-left: 2%;
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+/* .office h3 {
+    color: #fff;
+}
+
+.office li,
+.office ul li a,
+.footer-t .widget ul li a {
+    color: #ffffff;
+} */
+
+.offices ul li a:hover,
+.footer-t .widget ul li a:hover {
+    color: #cccccc;
+}
+
+.office-container .widget ul li {
+    font-weight: 400;
+    font-size: 0.875em;
+}
+
+.office-container .widget ul li.address {
+    line-height: 1.2em;
+    margin-bottom: 20px;
+}
+
+.offices .tel a,
+.offices .fax a {
+    margin-left: 8px;
+    font-size: 16px;
+    font-family: 'Roboto Mono';
+}
+
 
 
 #primary .post .entry-header .entry-meta a:hover,
@@ -1208,16 +1265,6 @@ a:focus {
     background: var(--department-bg-color);
 }
 
-.footer-t .widget ul li a:hover,
-.footer-t .widget ul li a:focus {
-    color: #000;
-}
-
-.footer-t .widget ul li a {
-    -webkit-transition: ease 0.2s;
-    -moz-transition: ease 0.2s;
-    transition: ease 0.2s;
-}
 
 #crumbs a:hover,
 #crumbs a:focus {

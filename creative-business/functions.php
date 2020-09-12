@@ -82,6 +82,11 @@ function creative_business_fonts_url(){
 
         }
 
+        $font_families[] = 'Noto Sans TC:300,300i,400,400i,600,600i,700,700i,800,800i';
+        $font_families[] = 'Roboto Slab:500';
+        $font_families[] = 'Rubik';
+        $font_families[] = 'Roboto Mono';
+
         $query_args = array(
             'family'  => urlencode( implode( '|', $font_families ) ),
             'subset'  => urlencode( 'latin,latin-ext' ),

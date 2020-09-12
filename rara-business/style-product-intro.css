@@ -1,8 +1,72 @@
-.page {
+.price-table .item-2.page {
     font-family: 'Noto Sans TC';
 }
 
-.column-3 {
+.page-template-portfolio .title {
+    font-size: 36px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+}
+
+.page-template-portfolio .title-sub {
+    font-size: 18px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.bg-overlay {
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.txt-content {
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+}
+
+.download-wrapper {}
+
+.download-wrapper .download-box {
+    display: inline-block;
+    width: 220px;
+    height: 60px;
+    left: calc(50% - 110px);
+    text-align: center;
+}
+
+.download-wrapper .download {
+    display: inline-block;
+    width: 180px;
+    line-height: 50px;
+    vertical-align: middle;
+    border-radius: 4px;
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.download-wrapper .download::before {
+    content: url(./images/p4-s1-download.svg);
+    font-size: 8px;
+    position: relative;
+    top: 8px;
+    margin-right: 8px;
+}
+
+.column {
     display: flex;
     flex-wrap: wrap;
 }
@@ -21,7 +85,6 @@
 .column-3 .item .icon {
     display: inline-block;
     width: 64px;
-
 }
 
 .column-3 .item .item-name {
@@ -36,44 +99,81 @@
     text-align: center;
 }
 
+.column-2 .item-1 {
+    flex: 0 1 50%;
+}
+
+.column-2 .item-2 {
+    flex: 0 1 50%;
+}
+
+
+.column-2-6_4 .item-1 {
+    flex: 0 1 60%;
+}
+
+.column-2-6_4 .item-2 {
+    flex: 0 1 40%;
+}
+
+ul.two-col {
+    columns: 2;
+    margin: 0 10px;
+}
+
+ul.three-col {
+    columns: 3;
+}
+
+ul.item {
+    list-style: none
+}
+
+ul.item li {
+    margin-bottom: 1.4em;
+}
+
+ul.item li::before {
+    content: url('./images/li_arrow_black.svg');
+    margin-right: 8px;
+
+}
+
+
+
+ul.item.bg-white-style li::before {
+    content: url('./images/li_arrow_red.svg');
+    margin-right: 8px;
+
+}
+
+
 /* 我算算產品 p4 section 1 */
 .p4-s1 {
     position: relative;
     height: 480px;
     background-image: url(./images/p4-s1-bg.jpg);
+    background-size: cover !important;
+    background-position: center;
     text-align: center;
     color: #ffffff;
 }
 
-.p4-s1 .overlay {
-    position: absolute;
-    z-index: 5;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.p4-s1 .logo-box {
-    position: absolute;
-    top: 100px;
-    left: calc(50% - 100px);
-    height: 53px;
-
+.p4-s1 .logo-wrapper {
+    margin-top: 80px;
+    text-align: center;
 }
 
 .p4-s1 .logo-box {
     height: 53px;
-    width: 200px;
     background-image: url(./images/p4-s1-logo.png);
-    z-index: 10;
+    background-repeat: no-repeat;
+    background-position: center;
+
 }
 
 .p4-s1 .slogan {
-    position: absolute;
-    top: 200px;
-    width: 100%;
+    margin-top: 20px;
     text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
     font-size: 60px;
     font-weight: bold;
@@ -81,28 +181,33 @@
     font-style: normal;
     line-height: 1.48;
     letter-spacing: normal;
-    z-index: 10;
 }
 
 .p4-s1 .slogan-sub {
-    position: absolute;
-    top: 300px;
-    width: 100%;
     font-size: 22px;
-    z-index: 10;
+}
+
+.p4-s1 .download-wrapper {
+    margin-top: 70px;
+    text-align: center;
+}
+
+.p4-s1 .download-box {
+    display: inline-block;
+    width: 220px;
+    height: 60px;
+    left: calc(50% - 110px);
+    text-align: center;
 }
 
 .p4-s1 .download {
-    position: absolute;
-    top: 360px;
-    width: 200px;
-    height: 60px;
-    line-height: 60px;
+    display: inline-block;
+    width: 180px;
+    line-height: 50px;
     vertical-align: middle;
     border-radius: 4px;
-    left: calc(50% - 100px);
     background-color: var(--primary-color);
-    z-index: 10;
+    color: #fff;
 }
 
 .p4-s1 .download::before {
@@ -110,8 +215,17 @@
     font-size: 8px;
     position: relative;
     top: 8px;
-    margin-right: 16px;
+    margin-right: 8px;
 }
+
+.p4-s1 .download a {
+    color: #fff;
+}
+
+.p4-s1 .download a:hover {
+    color: #fff;
+}
+
 
 /* 我算算產品 p4 section 2 */
 .p4-s2 {
@@ -122,20 +236,10 @@
 }
 
 .p4-s2 .title {
-    font-size: 36px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-align: center;
-    color: var(--black);
+    color: #000;
 }
 
 .p4-s2 .title-sub {
-    font-size: 18px;
-    margin: 20px 0;
-    text-align: center;
     color: #333333;
 }
 
@@ -150,4 +254,264 @@
 
 .p4-s2 .item-3 .icon::after {
     content: url(./images/p4-s2-item3-icon.svg);
+}
+
+.p4-s3 {
+    padding: 60px;
+}
+
+.p4-s3 .title {
+    font-weight: 400;
+}
+
+.p4-s3 .title .em {
+    font-weight: 600;
+}
+
+.p4-s3 .title-sub {
+    padding: 0 60px;
+    text-align: left;
+}
+
+.p4-s3 .item-1 {
+    padding: 20px;
+}
+
+.p4-s3 .item-2 .img-box {
+    width: 100%;
+    min-height: 450px;
+}
+
+.p4-s3 .p4-s3-img {
+    min-width: 100%;
+    min-height: 400px;
+    background-image: url(./images/p4-s3-img.jpg);
+    background-repeat: no-repeat;
+}
+
+.p4-s4 {
+    min-height: 540px;
+    background-image: url(./images/p4-s4-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover !important;
+    position: relative;
+    color: #fff;
+}
+
+.p4-s4 .bg-overlay {
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.p4-s4 .title {
+    margin-top: 60px;
+    font-weight: 400;
+}
+
+.p4-s4 .em {
+    font-weight: 600;
+}
+
+.p4-s4 ul {
+    margin: 0 40px;
+    padding: 0;
+    list-style: none;
+}
+
+.p4-s4 li {
+    background-color: #fff;
+    border-radius: 5px;
+    height: 120px;
+    margin-bottom: 20px;
+    padding: 16px;
+    font-size: 16px;
+}
+
+.p4-s4 li {
+    margin-left: 12px;
+}
+
+.p4-s4 li .h5 {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.p4-s4 li .desc {
+    line-height: 1.2em;
+    font-size: 14px;
+    color: #333333;
+}
+
+.p4-s5 {
+    padding: 50px;
+    height: 1000px;
+}
+
+.p4-s5 .product-figure {
+    text-align: center;
+    margin: 40px;
+}
+
+.p4-s5 .product-figure .img-box {
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    background-image: url(./images/p4-s5-figure-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover !important;
+}
+
+
+.p4-s5 ul {
+    margin: 20px;
+    list-style: none;
+    margin-top: 40px;
+}
+
+.p4-s5 li {
+    height: 180px;
+}
+
+.p4-s5 li .h5 {
+    color: var(--primary-color);
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+.p4-s5 ul.item li {
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+
+.p4-s5 .desc {
+    font-size: 14px;
+    line-height: 1.375em;
+}
+
+.p4-s6 {
+    min-height: 800px;
+    background-color: #f9f9f9;
+    padding-top: 40px;
+}
+
+.price-table {
+    padding-top: 20px;
+    padding-left: 50px;
+}
+
+.price-table .solution {
+    color: #000;
+    font-size: 20px;
+}
+
+.price-table .price .num {
+    font-size: 1.5em;
+}
+
+.price-table .item-2 .solution {
+    color: #fff;
+}
+
+.price-table .column {
+    max-width: 800px;
+    margin: 50px auto 0 auto;
+}
+
+.price-table .item {
+    height: 500px;
+    max-width: 250px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    background-color: #fff;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.price-table .item-2 {
+    position: relative;
+    /* transform-origin: 50% 50%; */
+    z-index: 5;
+}
+
+.price-table .item-1 {
+    /* margin-left: -30px; */
+    flex: 0 1 40%;
+}
+
+.price-table .item-2 {
+    flex: 0 1 30%;
+    border: 1px solid red;
+    color: #fff;
+}
+
+.price-table .item-3 {
+    /* margin-right: -30px; */
+    padding-left: 30px;
+    flex: 0 1 40%;
+}
+
+.price-table .item-2 .emphasis-layout {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    z-index: 10;
+    border-radius: 6px;
+    border: 1px solid var(--primary-color);
+    background-color: var(--primary-color);
+    padding-top: 40px;
+}
+
+.price-table .item-2 .emphasis-layout .emphasis-shift {
+    height: 20px;
+}
+
+.price-table .item-2 .desc {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.price-table .desc {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.price-table .desc-item {
+    height: 40px;
+    font-size: 0.75em;
+    line-height: 36px;
+    vertical-align: middle;
+    border-bottom: 1px solid #ccc;
+}
+
+.price-table .desc-item.empty {
+    border-bottom: 1px solid transparent;
+}
+
+.price-table .download-wrapper .download {
+    width: 140px;
+    height: 50px;
+}
+
+.price-table .item-2 .download {
+    width: 140px;
+    height: 50px;
+    color: var(--primary-color);
+    background-color: #fff;
+}
+
+.price-table .item-2 .download-wrapper .download::before {
+    content: url(./images/p4-s1-download_invert.svg);
+}
+
+.price-table .tips {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.price-table .item-2 .tips {
+    color: #ececec;
 }
