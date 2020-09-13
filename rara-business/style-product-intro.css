@@ -125,30 +125,103 @@ ul.three-col {
     columns: 3;
 }
 
+ul.four-col {
+    columns: 4;
+}
+
 ul.item {
     list-style: none
 }
 
-ul.item li {
+ul.item>li {
     margin-bottom: 1.4em;
 }
 
-ul.item li::before {
+ul.item.theme-icon-red>li {
+    max-width: 240px;
+    text-align: center;
+    border-radius: 16px;
+    padding: 0 16px;
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+ul.item.theme-icon-red>li::before {
+    content: none;
+}
+
+ul.item>li .item-name {
+    display: inline-block;
+}
+
+ul.item.theme-red>li .item-name {
+    display: inline-block;
+}
+
+ul.item>li::before {
     content: url('./images/li_arrow_black.svg');
     margin-right: 8px;
 
 }
 
+ul.item>li .desc {
+    line-height: 1.2em;
+    font-size: 16px;
+    color: #333333;
+}
 
-
-ul.item.bg-white-style li::before {
+ul.item.theme-red>li::before {
     content: url('./images/li_arrow_red.svg');
     margin-right: 8px;
 
 }
 
+/* 稅務會計 */
 
-/* 我算算產品 p4 section 1 */
+.p1-s1 {
+    padding: 50px 0 12px 0;
+}
+
+.p1-s1 h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.p1-s2 {
+    text-align: center;
+}
+
+.p1-s3 {
+    /* border: 1px solid red; */
+}
+
+.p1-s3 ul.item>li {
+    height: 220px;
+    padding: 8px 16px;
+}
+
+.p1-s3 ul.item>li .desc {
+    padding: 16px 36px 0 0;
+}
+
+.p1-s3 ol {
+    margin: 0;
+}
+
+.p1-s4 .content,
+.p1-s5 .content {
+    padding: 30px 0 50px 0;
+}
+
+.p1-s4 .title,
+.p1-s5 .title {
+    text-align: left;
+    font-size: 24px;
+    padding-left: 100px;
+    color: #333333;
+}
+
+/* 我算算產品  */
 .p4-s1 {
     position: relative;
     height: 480px;
