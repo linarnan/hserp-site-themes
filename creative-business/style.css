@@ -1559,6 +1559,13 @@ a:focus {
 /* specific clients menu */
 #mega-menu-wrap-primary #mega-menu-primary>li#mega-menu-item-261.mega-menu-megamenu>ul.mega-sub-menu {
     position: absolute;
+    left: unset;
+    width: 240px;
+    margin-left: -80px;
+}
+
+#mega-menu-wrap-primary #mega-menu-primary li.mega-menu-megamenu>ul.mega-sub-menu>li.mega-menu-row.member-zone {
+    padding: 16px 40px;
 }
 
 #mega-menu-wrap-primary #mega-menu-primary li.mega-menu-megamenu>ul.mega-sub-menu>li.mega-menu-row {
