@@ -465,6 +465,18 @@ ul.item.bg-white-style li::before {
     padding-top: 40px;
 }
 
+.price-table .item.item-1:hover,
+.price-table .item.item-3:hover {
+    margin-top: -5px;
+    transition: 0.5s ease;
+}
+
+.price-table .item-2 .emphasis-layout:hover {
+    top: -25px;
+    bottom: -15px;
+    transition: 0.5s ease;
+}
+
 .price-table .item-2 .emphasis-layout .emphasis-shift {
     height: 20px;
 }

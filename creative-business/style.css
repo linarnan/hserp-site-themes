@@ -1556,6 +1556,11 @@ a:focus {
     position: fixed;
 }
 
+/* specific clients menu */
+#mega-menu-wrap-primary #mega-menu-primary>li#mega-menu-item-261.mega-menu-megamenu>ul.mega-sub-menu {
+    position: absolute;
+}
+
 #mega-menu-wrap-primary #mega-menu-primary li.mega-menu-megamenu>ul.mega-sub-menu>li.mega-menu-row {
     padding: 24px 50px 30px 50px;
 }

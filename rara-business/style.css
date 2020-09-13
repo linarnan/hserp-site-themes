@@ -3693,10 +3693,12 @@ TAXONOMY PORTFOLIO CATEGORY
  ==============================*/
 
 #crumbs {
-    margin: 0 0 15px;
+    margin: 0;
     line-height: 1.625em;
     font-size: 0.8em;
-    color: #7b7b7b;
+    color: #333333;
+    background-color: #f9f9f9;
+    padding: 8px 80px;
 }
 
 #crumbs a {
@@ -5013,10 +5015,11 @@ TAXONOMY PORTFOLIO CATEGORY
  Case Study Page Study
  ==============================*/
 
-.page-template-portfolio #crumbs {
-    max-width: 830px;
-    margin: 0 auto 15px;
-    text-align: center;
+.page-template-portfolio .page-content,
+.page-template-portfolio .entry-content,
+.page-template-portfolio .entry-summary,
+.page-template-portfolio .hentry {
+    margin: 0;
 }
 
 .page-template-portfolio .page-header {
