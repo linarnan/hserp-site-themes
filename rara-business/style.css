@@ -4265,11 +4265,19 @@ TAXONOMY PORTFOLIO CATEGORY
     border-color: #0aa3f3;
 }
 
-.categories {
-    font-size: 0.9em;
-    line-height: 1.444em;
+
+.category-container li.cat-item {
+    list-style: none;
+    padding: 0 18px;
+    border-radius: 16px;
+    background-color: var(--primary-color);
     display: inline-block;
-    vertical-align: middle;
+    margin-right: 12px;
+}
+
+.category-container li.cat-item a,
+.category-container li.cat-item a:hover {
+    color: #fff;
 }
 
 .single .social-share {

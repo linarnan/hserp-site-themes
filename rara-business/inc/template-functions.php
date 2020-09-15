@@ -352,7 +352,7 @@ if( ! function_exists( 'hs_posts_categories' ) ) :
 function hs_posts_categories() {
     if( is_home() || is_archive() || is_category() ) {
         echo '<div class="category-container">';
-        echo '<div class="categories"><a href="'.site_url().'/news/" class="active">全部</a></div>';
+        echo '<li class="cat-item"><a href="'.site_url().'/news/" class="active">全部</a></li>';
         rara_business_categories();
         echo '</div>';
     }
@@ -758,7 +758,7 @@ function rara_business_posts_entry() {
         </div>
         <div class="post-meta">
             <div class="entry-meta"><?php rara_business_posted_on();?></div>
-            <div class="category"><?php rara_business_categories();?></div>
+            <div class="category"><?php rara_business_post_category();?></div>
         </div>
 	</div><!-- .entry-header -->
 <?php
@@ -794,7 +794,7 @@ function rara_business_entry_header(){
             the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
         }
         
-        if( is_single() ) rara_business_categories();
+        if( is_single() ) rara_business_category();
         ?>
 	</header><!-- .entry-header -->
     <?php

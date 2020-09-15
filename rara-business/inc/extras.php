@@ -72,13 +72,31 @@ if( ! function_exists( 'rara_business_categories' ) ) :
 function rara_business_categories(){
     // Hide category and tag text for pages.
 	if ( 'post' === get_post_type() ) {
-		$categories_list = get_the_category_list( ' ' );
+		$categories_list = wp_list_categories(array('title_li'=>''));
 		if ( $categories_list ) {
 			echo '<div class="categories">' . $categories_list . '</div>';
 		}
 	}
 }
 endif;
+
+
+
+if( ! function_exists( 'rara_business_post_category' ) ) :
+/**
+ * Categories
+*/
+function rara_business_post_category(){
+    // Hide category and tag text for pages.
+    if ( 'post' === get_post_type() ) {
+        $categories_list = get_the_category_list( ' ' );
+        if ( $categories_list ) {
+            echo '<div class="categories">' . $categories_list . '</div>';
+        }
+    }
+}
+endif;
+
 
 if( ! function_exists( 'rara_business_tags' ) ) :
 /**

@@ -129,8 +129,28 @@ ul.four-col {
     columns: 4;
 }
 
+
 ul.item {
-    list-style: none
+    list-style: none;
+    margin: 0;
+}
+
+ul.item.flex {
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* columns: unset; */
+}
+
+ul.item.flex.two-col {
+    flex: 0 1 50%;
+}
+
+ul.item.flex.three-col {
+    flex: 0 1 33%;
+}
+
+ul.item.flex.four-col li {
+    flex: 0 1 25%;
 }
 
 ul.item>li {
@@ -156,7 +176,15 @@ ul.item>li .item-name {
 
 ul.item.theme-red>li .item-name {
     display: inline-block;
+    color: var(--primary-color);
 }
+
+ul.item.theme-red>li.empty::before,
+ul.item>li.empty::before {
+    /* hide item icon */
+    content: none;
+}
+
 
 ul.item>li::before {
     content: url('./images/li_arrow_black.svg');
@@ -165,6 +193,7 @@ ul.item>li::before {
 }
 
 ul.item>li .desc {
+    padding: 16px 0;
     line-height: 1.2em;
     font-size: 16px;
     color: #333333;
@@ -174,6 +203,60 @@ ul.item.theme-red>li::before {
     content: url('./images/li_arrow_red.svg');
     margin-right: 8px;
 
+}
+
+.items.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.items.flex.two-col .item {
+    flex: 0 1 50%;
+}
+
+.items.flex.three-col .item {
+    flex: 0 1 33%;
+}
+
+.items.flex.four-col .item {
+    flex: 0 1 25%;
+}
+
+.items.flex .item {
+    margin-bottom: 20px;
+}
+
+.items.theme-icon-red .item .icon-btn {
+    display: inline-block;
+    width: 250px;
+    text-align: center;
+    border-radius: 16px;
+    padding: 0 16px;
+    margin: 0 16px;
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.section .section-title-en,
+.section .section-title {
+    padding-left: 40px;
+}
+
+.section .section-title-en {
+    text-transform: uppercase;
+    font-family: 'Roboto';
+    font-size: 24px;
+    color: #999999;
+}
+
+.section .section-title {
+    font-size: 36px;
+    color: var(--black);
+    margin-bottom: 50px;
+}
+
+.align-center {
+    text-align: center;
 }
 
 /* 稅務會計 */
@@ -208,17 +291,32 @@ ul.item.theme-red>li::before {
     margin: 0;
 }
 
-.p1-s4 .content,
-.p1-s5 .content {
-    padding: 30px 0 50px 0;
-}
+
 
 .p1-s4 .title,
 .p1-s5 .title {
     text-align: left;
     font-size: 24px;
-    padding-left: 100px;
+    margin-left: 20px;
+    margin-bottom: 30px;
     color: #333333;
+
+}
+
+
+.p1-s4,
+.p1-s5 {
+    margin-bottom: 30px;
+}
+
+/* 審計簽證 */
+
+.p2-s3 li {
+    height: 160px;
+}
+
+.p2-s4 {
+    margin-bottom: 100px;
 }
 
 /* 我算算產品  */
