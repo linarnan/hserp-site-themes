@@ -901,3 +901,73 @@ ul.item.theme-red>li::before {
 .questions .question.fold .desc:after {
     content: "\f142";
 }
+
+.proven .title-en {
+    text-align: left;
+    padding: 0 24px;
+    margin-bottom: -8px;
+}
+
+.proven .title {
+    text-align: left;
+    padding: 0 20px;
+}
+
+.proven-s1 {
+    position: relative;
+    height: 360px;
+    width: 100%;
+    background-image: url(./images/proven_section_1_bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover !important;
+    color: #fff;
+}
+
+.proven-s1 .title {
+    margin-top: 160px;
+
+    text-align: center;
+}
+
+.proven.section {
+    padding: 30px 80px;
+}
+
+.proven.section .title {
+    margin-bottom: 20px;
+}
+
+.proven.section .item {
+    text-align: center;
+}
+
+.proven.section .item .name {
+    margin: 0 auto;
+    width: 87%;
+    height: 75px;
+    line-height: 70px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+    border: solid 1px #cccccc;
+    background-color: #ffffff;
+}
+
+.proven-s4 {
+    position: relative;
+    height: 400px;
+    width: 100%;
+    background-image: url(./images/our-clients.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover !important;
+
+}
+
+.proven-s4 h2 {
+    color: #fff;
+}
+
+.proven-s4.section:last-child {
+    margin-bottom: 0;
+}
