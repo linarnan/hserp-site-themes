@@ -143,6 +143,13 @@ a:focus {
     outline: thin dotted #000;
 }
 
+#masthead {
+    position: sticky;
+    top: -1px;
+    background-color: #fff;
+    z-index: 1000;
+}
+
 .site-header .header-t {
     padding: 0;
 }
@@ -1622,14 +1629,17 @@ a:focus {
 
 #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-megamenu>ul.mega-sub-menu {
     position: fixed;
+    top: 65px;
 }
 
 /* specific clients menu */
 #mega-menu-wrap-primary #mega-menu-primary>li#mega-menu-item-261.mega-menu-megamenu>ul.mega-sub-menu {
     position: absolute;
+    top: 65px;
     left: unset;
     width: 240px;
     margin-left: -80px;
+    margin-top: -25px;
 }
 
 #mega-menu-wrap-primary #mega-menu-primary li.mega-menu-megamenu>ul.mega-sub-menu>li.mega-menu-row.member-zone {

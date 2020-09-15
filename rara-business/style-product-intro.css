@@ -714,3 +714,190 @@ ul.item.theme-red>li::before {
 .price-table .item-2 .tips {
     color: #ececec;
 }
+
+/* 服務流程 */
+.serviceflow-s1 {
+    position: relative;
+    height: 360px;
+    width: 100%;
+    background-image: url(./images/serviceflow_section_1_bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover !important;
+    color: #fff;
+}
+
+.serviceflow-s1 .title {
+    margin-top: 160px;
+}
+
+.step {
+    text-align: center;
+    color: #999999;
+}
+
+.serviceflow,
+.serviceflow,
+.serviceflow {
+    margin-bottom: 80px;
+}
+
+
+
+.serviceflow .icon-box {
+    width: 100%;
+    text-align: center;
+}
+
+.serviceflow .icon {
+    display: inline-block;
+    width: 140px;
+    height: 140px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.serviceflow .item .item-name {
+    font-size: 22px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000;
+}
+
+.serviceflow .item .desc {
+    font-size: 16px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: center;
+    color: #999999;
+    padding: 24px 30px;
+    text-align: left;
+}
+
+.serviceflow-s3 .item-1 .icon {
+    background-image: url(./images/service-step1-contact.png.svg);
+}
+
+.serviceflow-s3 .item-2 .icon {
+    background-image: url(./images/service-step1-demo.png.svg);
+}
+
+.serviceflow-s3 .item-3 .icon {
+    background-image: url(./images/service-step1-plan.png.svg);
+}
+
+.serviceflow-s4 .item-1 .icon {
+    background-image: url(./images/service-step2-contract.png.svg);
+}
+
+.serviceflow-s4 .item-2 .icon {
+    background-image: url(./images/service-step2-install.png.svg);
+}
+
+.serviceflow-s5 .item-1 .icon {
+    background-image: url(./images/service-step3-contact.png.svg);
+}
+
+.serviceflow-s5 .item-2 .icon {
+    background-image: url(./images/service-step3-demo.png.svg);
+}
+
+.serviceflow-s5 .item-3 .icon {
+    background-image: url(./images/service-step3-upgrade.png.svg);
+}
+
+.serviceflow-s5 .item .desc {
+    text-align: center;
+}
+
+.serviceflow-s2 {
+    padding: 40 80px;
+}
+
+.serviceflow-s2 .title,
+.serviceflow-s3 .title,
+.serviceflow-s4 .title,
+.serviceflow-s5 .title {
+    color: #000;
+}
+
+.serviceflow.qa {
+    background-color: #f9f9f9;
+    padding: 40px;
+    margin-bottom: 0;
+}
+
+.fake-infographic {
+    height: 300px;
+    line-height: 280px;
+    text-align: center;
+    margin: 60px 120px;
+    background-color: #f9f9f9;
+}
+
+.fake-text {
+    color: #999999;
+}
+
+.questions {
+    width: 800px;
+    margin: 20px auto;
+}
+
+.questions .question {
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+}
+
+.questions .question .desc {
+    padding: 20px 30px;
+    color: #000;
+}
+
+.questions .question .ans {
+    padding: 16px 60px;
+    background-color: #f9f9f9;
+}
+
+.questions .question .ans.hide {
+    display: none;
+}
+
+.questions .question .desc:before {
+    content: "Q";
+    padding-left: 8px;
+    padding-bottom: 2px;
+    margin-right: 24px;
+    display: inline-block;
+    width: 36px;
+    font-size: 24px;
+    line-height: 36px;
+    border-radius: 18px;
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+
+
+.questions .question .desc:after {
+    content: "\f140";
+    font-family: dashicons;
+    padding-right: 8px;
+    display: inline-block;
+    width: 20px;
+    font-size: 24px;
+    color: #ccc;
+    position: absolute;
+    right: 20px;
+}
+
+.questions .question.fold .desc:after {
+    content: "\f142";
+}
