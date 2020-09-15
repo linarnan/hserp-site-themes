@@ -278,6 +278,74 @@ a:focus {
     background: #000;
 }
 
+
+.product-intro-title {
+    text-align: center;
+    color: #000;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-intro {
+    flex: 0 0 33%;
+    padding: 16px;
+}
+
+.product-intro .icon-box {
+    text-align: center;
+    font-size: 1.6em;
+    color: var(--primary-color);
+    display: inline-block;
+    height: 150px;
+    width: 100%;
+}
+
+.product-intro .icon {
+    display: inline-block;
+    width: 140px;
+    height: 140px;
+}
+
+.product-intro .icon-1 {
+    background-image: url(./images/index-accounting.svg);
+}
+
+.product-intro .icon-2 {
+    background-image: url(./images/index-certificate.svg);
+}
+
+.product-intro .icon-3 {
+    background-image: url(./images/index-erp.svg);
+}
+
+.product-intro .title {
+    font-size: 22px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000;
+    margin: 6px 0;
+}
+
+.product-intro .desc {
+    font-family: NotoSansCJKtc;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #333333;
+}
+
+
 .our-services {
     margin: 30px 0 0;
 }
