@@ -66,6 +66,11 @@
     margin-right: 8px;
 }
 
+.product-figure {
+    text-align: center;
+    margin: 40px;
+}
+
 .column {
     display: flex;
     flex-wrap: wrap;
@@ -237,6 +242,14 @@ ul.item.theme-red>li::before {
     color: #fff;
 }
 
+.section {
+    margin-top: 60px;
+}
+
+.section:last-child {
+    margin-bottom: 80px;
+}
+
 .section .section-title-en,
 .section .section-title {
     padding-left: 40px;
@@ -317,6 +330,12 @@ ul.item.theme-red>li::before {
 
 .p2-s4 {
     margin-bottom: 100px;
+}
+
+.p3-s1 {}
+
+.p3-s3 li {
+    height: 140px;
 }
 
 /* 我算算產品  */
@@ -519,10 +538,7 @@ ul.item.theme-red>li::before {
     height: 1000px;
 }
 
-.p4-s5 .product-figure {
-    text-align: center;
-    margin: 40px;
-}
+
 
 .p4-s5 .product-figure .img-box {
     display: inline-block;
