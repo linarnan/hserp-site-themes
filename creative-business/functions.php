@@ -143,7 +143,7 @@ function rara_business_header(){
     $link              = get_theme_mod( 'custom_link', $default_options['custom_link'] );
     ?>
     
-    <header a="a" id="masthead" class="site-header" itemscope itemtype="https://schema.org/WPHeader">
+    <header id="masthead" class="site-header" itemscope itemtype="https://schema.org/WPHeader">
         <?php 
             if( ! ( $link && $label ) && ! ( $ed_header_social && ! empty( $social_links ) ) ){ 
                 $class = ' hide-header-top';
