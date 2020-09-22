@@ -68,7 +68,15 @@
 
 .product-figure {
     text-align: center;
-    margin: 40px;
+}
+
+.product-figure .img-box{
+    display: inline-block;
+    min-height: 600px;
+    width: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .column {
@@ -283,6 +291,11 @@ ul.item.theme-red>li::before {
     text-align: center;
 }
 
+.p1-s2 .img-box {
+    height: 800px;
+    background-image: url(./images/p1_s2_figure_A.png);
+}
+
 .p1-s2 {
     text-align: center;
 }
@@ -332,10 +345,18 @@ ul.item.theme-red>li::before {
     margin-bottom: 100px;
 }
 
-.p3-s1 {}
+.p2-s2 .img-box {
+    height: 800px;
+    background-image: url(./images/p2_s2_figure_audit.png);
+}
 
 .p3-s3 li {
     height: 140px;
+}
+
+.p3-s2 .img-box {
+    height: 700px;
+    background-image: url(./images/p3_s1_figure_erp.png);
 }
 
 /* 我算算產品  */
@@ -535,19 +556,13 @@ ul.item.theme-red>li::before {
 
 .p4-s5 {
     padding: 50px;
-    height: 1000px;
 }
 
 
 
 .p4-s5 .product-figure .img-box {
-    display: inline-block;
-    width: 400px;
     height: 400px;
     background-image: url(./images/p4-s5-figure-1.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover !important;
 }
 
 
