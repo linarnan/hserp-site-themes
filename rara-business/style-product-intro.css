@@ -42,41 +42,9 @@
     z-index: 10;
 }
 
-.margin-0 {
-    margin: 0;
-}
-
-.margin-tb-0 {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-.pad-0 {
-    padding: 0;
-}
-
-.pad-16 {
-    padding: 16px;
-}
-
-.pad-24 {
-    padding: 24px;
-}
-
-.pad-32 {
-    padding: 32px;
-}
-
-.pad-lr-32 {
-    padding-left: 32px;
-    padding-right: 32px;
-}
-
-.download-wrapper {}
 
 .download-wrapper .download-box {
     display: inline-block;
-    width: 220px;
     height: 60px;
     left: calc(50% - 110px);
     text-align: center;
@@ -84,7 +52,7 @@
 
 .download-wrapper .download {
     display: inline-block;
-    width: 180px;
+    min-width: 180px;
     line-height: 50px;
     vertical-align: middle;
     border-radius: 4px;
@@ -466,10 +434,8 @@ ul.item.theme-red>li::before {
 
 /* 我算算產品 p4 section 2 */
 .p4-s2 {
-    height: 500px;
     padding: 60px;
     background-color: #f9f9f9;
-
 }
 
 .p4-s2 .title {
@@ -599,7 +565,7 @@ ul.item.theme-red>li::before {
 }
 
 .p4-s5 li {
-    height: 180px;
+    height: 240px;
 }
 
 .p4-s5 li .h5 {
@@ -670,7 +636,7 @@ ul.item.theme-red>li::before {
 
 .price-table .item-2 {
     flex: 0 1 30%;
-    border: 1px solid red;
+    border: 1px solid var(--primary-color);
     color: #fff;
 }
 
@@ -1125,7 +1091,7 @@ table.product-compared tbody div.has{
     display: inline-block;
     width: 16px;
     height: 16px;
-    border-radius: 16px;
+    border-radius: 8px;
 }
 
 table.product-compared tbody td.black,
@@ -1139,4 +1105,182 @@ table.product-compared tbody td.black div.has {
 
 table.product-compared tbody td.red div.has {
     background-color: var(--primary-color);
+}
+
+/* hi-help */
+
+.hi-help .section-1{
+    position: relative;
+    min-height: 600px;
+    background-image: url(./images/helpdesk-bg-1.png);
+    background-position: 0 -300px;
+    background-repeat: no-repeat;
+    background-size: cover !important;
+}
+
+
+.hi-help .section-1 .illustration {
+    position: absolute;
+    left: 140px;
+    top: 80px;
+}
+
+.hi-help .section-1 .illustration .img-box{
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    background-image: url(./images/hi-help/hi-help-illustration-1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain !important;
+}
+
+.hi-help .section-1 .main-content {
+    position: absolute;
+    display: block;
+    left: 620px;
+    top: 120px;
+    width: 500px;
+    height: 500px;
+}
+
+
+.hi-help .section-1 .main-content .title,
+.hi-help .section-1 .main-content .title-sub {
+    text-align: left;
+}
+
+.hi-help .product-intro .title {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.hi-help .section-2 .download-wrapper {
+    margin-top: 30px;
+}
+
+.hi-help .section-2 .download-wrapper .download {
+    background-color: #2aa0e0;
+}
+
+.hi-help .section-2 .product-intro .icon-1 {
+    background-image: url(./images/hi-help/hi-help_s2-icon-1.svg);
+}
+.hi-help .section-2 .product-intro .icon-2 {
+    background-image: url(./images/hi-help/hi-help_s2-icon-2.svg);
+}
+.hi-help .section-2 .product-intro .icon-3 {
+    background-image: url(./images/hi-help/hi-help_s2-icon-3.svg);
+}
+
+.hi-help .section-3 {
+    min-height: 600px;
+}
+
+.hi-help .section-1 .container,
+.hi-help .section-3 .container{
+    position: relative;
+}
+
+.hi-help .section-3 .illustration {
+    position: absolute;
+    display: inline-block;
+    width: 500px;
+    height: 600px;
+    top: 0;
+    left: 600px;
+}
+
+.hi-help .section-3 .illustration .img-box{
+    width: 100%;
+    height: 600px;
+    background-image: url(./images/hi-help/hi-help_s3_illustration.png);
+    background-size: contain !important;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+.hi-help .section-3 .app-download {
+    margin-top: 100px
+}
+
+.hi-help .section-3 .app-download > div .img-box,
+.hi-help .section-3 .app-download > div{
+    width: 160px;
+    height: 100px;
+    display: inline-block;
+}
+
+.hi-help .section-3 .app-download > div .img-box {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.hi-help .section-3 .app-download > div.apple {
+    margin-left: 20px;
+}
+
+.hi-help .section-3 .app-download .apple .img-box {
+    background-image: url(./images/hi-help/apple_store_download.png);
+}
+
+.hi-help .section-3 .app-download .google .img-box {
+    background-image: url(./images/hi-help/google_play_download.png);
+}
+
+
+.hi-help .section-3 .main-content {
+    position: absolute;
+    display: inline-block;
+    width: 500px;
+    top: 80px; 
+    left: 80px;
+}
+
+.hi-help .section-3 .title,
+.hi-help .section-3 .title-sub{
+    text-align: left;
+}
+
+.hi-help .section-4 .product-intro .icon-1 {
+    background-image: url(./images/hi-help/hi-help_s4-icon-1.svg);
+}
+.hi-help .section-4 .product-intro .icon-2 {
+    background-image: url(./images/hi-help/hi-help_s4-icon-2.svg);
+}
+.hi-help .section-4 .product-intro .icon-3 {
+    background-image: url(./images/hi-help/hi-help_s4-icon-3.svg);
+}
+
+/* overriding */
+
+.margin-0 {
+    margin: 0;
+}
+
+.margin-tb-0 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.pad-0 {
+    padding: 0;
+}
+
+.pad-16 {
+    padding: 16px;
+}
+
+.pad-24 {
+    padding: 24px;
+}
+
+.pad-32 {
+    padding: 32px;
+}
+
+.pad-lr-32 {
+    padding-left: 32px;
+    padding-right: 32px;
 }
