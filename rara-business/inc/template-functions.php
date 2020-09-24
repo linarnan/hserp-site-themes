@@ -793,7 +793,8 @@ function rara_business_entry_header(){
         }else{
             the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
         }
-         if( is_single() ) rara_business_categories();
+        // hide category for single post/page
+        //if( is_single() ) rara_business_categories();
         ?>
 	</header><!-- .entry-header -->
     <?php
