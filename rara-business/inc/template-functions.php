@@ -285,7 +285,7 @@ function rara_business_banner(){
                                 ?>
                                 <div class="btn-holder wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.7s">
                                     <?php
-                                        if ( $link_one_label ) echo  '<a rel="noopener" target="_blank" href="'. esc_url( $link_one_url ) .'" class="btn-free-inquiry"><i class="fa fa-edit"></i>'. esc_html( $link_one_label ) .'</a>'; 
+                                    if ( $link_one_label ) echo  '<a rel="noopener" target="_blank" href="'. esc_url( $link_one_url ) .'" class="btn-free-inquiry hover"><i class="fa fa-edit"></i>'. esc_html( $link_one_label ) .'</a>'; 
                                         if ( $link_two_label ) echo '<a target="_blank" href="'. esc_url( $link_two_url ) .'" class="btn-view-service">'. esc_html( $link_two_label ) .'</a>';
                                     ?>
                                 </div>

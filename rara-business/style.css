@@ -1606,12 +1606,12 @@ NEWSLETTER WIDGET
     font-size: 1.2em;
 }
 
-.banner .banner-text .btn-holder .btn-free-inquiry:hover,
+/* .banner .banner-text .btn-holder .btn-free-inquiry:hover,
 .banner .banner-text .btn-holder .btn-free-inquiry:focus {
     text-decoration: none;
     background: #fff;
     color: #0aa3f3;
-}
+} */
 
 .banner .banner-text .btn-holder .btn-free-inquiry:focus {
     outline: thin dotted #fff;
@@ -1632,13 +1632,13 @@ NEWSLETTER WIDGET
     -moz-transition: ease 0.2s;
     transition: ease 0.2s;
 }
-
+/* 
 .banner .banner-text .btn-holder .btn-view-service:hover,
 .banner .banner-text .btn-holder .btn-view-service:focus {
     text-decoration: none;
     color: #fff;
     background: #0aa3f3;
-}
+} */
 
 .banner .banner-text .btn-holder .btn-view-service:focus {
     outline: thin dotted #fff;

@@ -253,27 +253,19 @@ a:focus {
 
 
 
-.banner .banner-text .btn-holder .btn-free-inquiry {
-    background: var(--primary-color);
-    font-weight: 600;
-    letter-spacing: 1px;
-}
-
-.banner .banner-text .btn-holder .btn-free-inquiry:hover,
-.banner .banner-text .btn-holder .btn-free-inquiry:focus {
-    background: var(--secondary-color);
-    color: #fff;
-}
-
+.banner .banner-text .btn-holder .btn-free-inquiry,
 .banner .banner-text .btn-holder .btn-view-service {
-    color: var(--primary-color);
     font-weight: 600;
     letter-spacing: 1px;
+    background: #fff;
+    color: var(--primary-color);
 }
 
-.banner .banner-text .btn-holder .btn-view-service:hover,
-.banner .banner-text .btn-holder .btn-view-service:focus {
-    background: var(--secondary-color);
+
+.banner .banner-text .btn-holder .btn-free-inquiry.hover,
+.banner .banner-text .btn-holder .btn-view-service.hover {
+    background: var(--primary-color);
+    color: #fff;
 }
 
 .banner .banner-text .text-holder {

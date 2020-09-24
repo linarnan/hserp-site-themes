@@ -43,4 +43,20 @@ jQuery(document).ready(function ($) {
     }, function () {
         $(this).removeClass("hover");
     });
+
+
+    $('.banner .banner-text .btn-holder .btn-free-inquiry').hover(function () {
+        $('.banner .banner-text .btn-holder .btn-view-service').removeClass('hover');
+        $(this).addClass("hover");
+    }, function () {
+
+    });
+
+    $('.banner .banner-text .btn-holder .btn-view-service').hover(function () {
+        $('.banner .banner-text .btn-holder .btn-free-inquiry').removeClass('hover');
+        $(this).addClass("hover");
+    }, function () {
+        $('.banner .banner-text .btn-holder .btn-free-inquiry').addClass('hover');
+        $(this).removeClass("hover");
+    });
 });
