@@ -60,6 +60,7 @@ jQuery(document).ready(function ($) {
         $(this).removeClass("hover");
     });
 
-    $('#mega-menu-item-48 a').attr('href', 'javascript:void(0)');//product;
-    $('#mega-menu-item-261 a').attr('href', 'javascript:void(0)');//customer support
+    $('#mega-menu-item-48 > a').attr('href', 'javascript:void(0)');//product;
+    $('#mega-menu-item-261 > a').attr('href', 'javascript:void(0)');//customer support
+    $('#mega-menu-item-261 > ul a').attr('target', '_blank');
 });
