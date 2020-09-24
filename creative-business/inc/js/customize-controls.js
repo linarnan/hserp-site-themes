@@ -59,4 +59,7 @@ jQuery(document).ready(function ($) {
         $('.banner .banner-text .btn-holder .btn-free-inquiry').addClass('hover');
         $(this).removeClass("hover");
     });
+
+    $('#mega-menu-item-48 a').attr('href', 'javascript:void(0)');//product;
+    $('#mega-menu-item-261 a').attr('href', 'javascript:void(0)');//customer support
 });
