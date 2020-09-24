@@ -68,6 +68,14 @@
     margin-right: 8px;
 }
 
+.icon{
+    transition: transform 0.3s;
+}
+
+.icon:hover {
+    transform: scale(1.06) translateY(-8px);
+}
+
 .product-figure {
     text-align: center;
 }
