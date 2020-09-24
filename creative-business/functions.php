@@ -213,12 +213,12 @@ function rara_business_header(){
                         } 
 
                         echo '<div class="text-logo">';
-                            if( is_front_page() ){ ?>
+                            /*if( is_front_page() ){ ?>
                                 <h1 class="site-title" itemprop="name"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" itemprop="url"><?php bloginfo( 'name' ); ?></a></h1>
                                 <?php } else { ?>
                                 <p class="site-title" itemprop="name"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" itemprop="url"><?php bloginfo( 'name' ); ?></a></p>
                             <?php
-                            }
+                            }*/
 
                             if ( $description || is_customize_preview() ){ ?>
                                 <p class="site-description" itemprop="description"><?php echo $description; ?></p>
