@@ -779,8 +779,8 @@ ul.item.theme-red>li::before {
     font-style: normal;
     line-height: 1.5;
     letter-spacing: normal;
-    text-align: center;
     color: #000;
+    text-align: center;
 }
 
 .serviceflow .item .desc {
@@ -789,10 +789,9 @@ ul.item.theme-red>li::before {
     font-style: normal;
     line-height: 1.2;
     letter-spacing: normal;
-    text-align: center;
     color: #999999;
     padding: 24px 30px;
-    text-align: left;
+    text-align: center;
 }
 
 .serviceflow-s3 .item-1 .icon {
