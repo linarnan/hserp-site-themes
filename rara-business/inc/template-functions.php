@@ -380,7 +380,7 @@ function rara_business_breadcrumb() {
       
     $depth = 1;  
     if( $breadcrumb_control ){  
-        echo '<div class="breadcrumb-wrapper"><div id="crumbs" itemscope itemtype="http://schema.org/BreadcrumbList"><span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="' . esc_url( home_url() ) . '" class="home_crumb"><span itemprop="name">' . esc_html( $home ) . '</span></a><meta itemprop="position" content="'. absint( $depth ).'" /><span class="separator">' . $delimiter . '</span></span>';
+        echo '<div class="breadcrumb-wrapper"><div class="container"><div id="crumbs" itemscope itemtype="http://schema.org/BreadcrumbList"><span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="' . esc_url( home_url() ) . '" class="home_crumb"><span itemprop="name">' . esc_html( $home ) . '</span></a><meta itemprop="position" content="'. absint( $depth ).'" /><span class="separator">' . $delimiter . '</span></span>';
             if( is_home() && ! is_front_page() ){            
                 $depth = 2;
                 echo $before . '<span itemprop="name">' . esc_html( single_post_title( '', false ) ) .'</span><meta itemprop="position" content="'. absint( $depth ).'" />'. $after;          
@@ -663,7 +663,7 @@ function rara_business_breadcrumb() {
                 echo $before . esc_html__( '404 Error - Page not Found', 'rara-business' ) . $after;
             }
             if( get_query_var('paged') ) echo __( ' (Page', 'rara-business' ) . ' ' . get_query_var('paged') . __( ')', 'rara-business' );        
-        echo '</div></div>';
+        echo '</div></div></div>';
     }
 }
 endif;

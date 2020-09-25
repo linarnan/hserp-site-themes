@@ -1450,6 +1450,10 @@ NEWSLETTER WIDGET
 }
 
 
+.breadcrumb-wrapper {
+    background-color: #f9f9f9;
+}
+
 
 /*================================
  Home Page Style
@@ -3697,7 +3701,6 @@ TAXONOMY PORTFOLIO CATEGORY
     line-height: 1.625em;
     font-size: 0.8em;
     color: #333333;
-    background-color: #f9f9f9;
     padding: 8px 80px;
 }
 
