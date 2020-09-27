@@ -6849,3 +6849,128 @@ RARATHEME SOCIAL ICON WIDGET
         grid-column: 1 / span 1;
     }
 }
+
+
+.clients-container {
+    display: flex;
+    flex-wrap: wrap;		
+}
+.clients-container .client-box {
+    flex: 0 0 30%;
+    max-width: 32%;
+    padding: 16px;
+    border-radius: 4px;
+    border: solid 1px #c9c9c9;
+    margin-left: 2%;
+    margin-bottom: 20px;
+}
+
+/* hide name and area */
+.clients-container .client-box .name,
+.clients-container .client-box .area {
+    display: none;
+}
+
+.clients-container .client-box .img-box {
+    min-height: 60px;
+    width: 300px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.clients-container .client-1 .img-box {
+    background-image: url(./images/clients/accountant/taipei-03.png);
+}
+
+.clients-container .client-2 .img-box {
+    background-image: url(./images/clients/accountant/tainan-01.png);
+}
+
+.clients-container .client-3 .img-box {
+    background-image: url(./images/clients/accountant/taipei-01.png);
+}
+
+.clients-container .client-4 .img-box {
+    background-image: url(./images/clients/company/taipei-company-01.png);
+}
+
+.clients-container .client-5 .img-box {
+    background-image: url(./images/clients/company/taichung-company-04.png);
+}
+
+.clients-container .client-6 .img-box {
+    background-image: url(./images/clients/company/taichung-company-01.png);
+}
+
+
+/*
+.clients-container {
+    display: flex;
+    flex-wrap: wrap;		
+}
+.client-box {
+    flex: 0 0 30%;
+    max-width: 32%;
+    padding: 16px;
+    border-radius: 4px;
+    border: solid 1px #c9c9c9;
+    margin-left: 2%;
+    margin-bottom: 20px;
+}
+
+.client-box .name {
+    font-size: 16px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.client-box .area-box {
+    line-height: 1.6em;
+    margin-top: 6px;
+    text-align: center;
+}
+.area-box .area{
+    display: inline-block;
+    font-size: 16px;
+    text-align: left;
+    width: 50px;
+    height: 24px;
+    border-radius: 16px;
+    line-height: 1.6;
+    padding-left: 8px;
+    margin-right: 6px;
+}
+.area.taipei {
+    border-color: #f5abbd;
+    background-color: #f5abbd;
+}
+.area.taipei:after{
+    content:"台北"
+}
+.area.taichung {
+    border-color: #78b8e5;
+    background-color: #78b8e5;
+}
+.area.taichung:after{
+    content:"台中"
+}
+.area.tainan {
+    border-color: #f7da91;
+    background-color: #f7da91;
+}
+.area.tainan:after{
+    content:"台南";
+}
+
+.area.kaohsiung {
+    border-color: #7dc6c7;
+    background-color: #7dc6c7;
+}
+.area.kaohsiung:after{
+    content:"高雄";
+}
+*/
