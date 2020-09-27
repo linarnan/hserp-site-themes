@@ -1281,7 +1281,7 @@ table.product-compared tbody td.red div.has {
 }
 
 
-.about-us > figure .img-box{
+.about-us .figure .img-box{
     height: 500px;
     background-image: url(./images/about_us.png);
 }
