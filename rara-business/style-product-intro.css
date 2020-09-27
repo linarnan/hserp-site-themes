@@ -21,7 +21,7 @@
 .img-box{
     display: inline-block !important;
     min-height: 400px;
-    width: 100% !important;
+    width: 100%;
     background-position: center !important;
     background-size: contain !important;
     background-repeat: no-repeat !important;
@@ -1134,6 +1134,7 @@ table.product-compared tbody td.red div.has {
 
 .hi-help .section-1 .illustration .img-box{
     height: 400px;
+    width: 400px;
     background-image: url(./images/hi-help/hi-help-illustration-1.png);
 }
 
