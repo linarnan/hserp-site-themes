@@ -1037,11 +1037,12 @@ ul.item.theme-red>li::before {
     position: relative;
     min-height: 300px;
     width: 100%;
+    text-align: center;
 }
 
 .module .module-figure .img-box {
-    margin: 40px 20px;
-    height: 300px; 
+    margin: 0 auto;
+    min-height: 280px; 
 } 
 
 /* module figures */
