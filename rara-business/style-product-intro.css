@@ -352,8 +352,8 @@ ul.item.theme-red>li::before {
 }
 
 .p2-s2 .img-box {
-    height: 800px;
-    background-image: url(./images/p2_s2_figure_audit.png);
+    height: 500px;
+    background-image: url(./images/p2_s2_product_figure.png);
 }
 
 .p3-s3 li {
@@ -1101,7 +1101,7 @@ ul.item.theme-red>li::before {
     background-image: url(./images/clients/company/taipei-company-07.png);
 }
 .proven .company-31 .img-box{
-    background-image: url(./images/clients/company/taipei-company-10.png);
+    background-image: url(./images/clients/p2_s2_product_figure.pngcompany/taipei-company-10.png);
 }
 .proven .company-40 .img-box{
     background-image: url(./images/clients/company/taipei-company-13.png);
