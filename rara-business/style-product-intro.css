@@ -253,11 +253,23 @@ ul.item.theme-red>li::before {
     display: inline-block;
     width: 250px;
     text-align: center;
-    border-radius: 16px;
+    height: 48px;
+    line-height: 48px;
+    vertical-align: middle;
+    border-radius: 48px;
     padding: 0 16px;
     margin: 0 16px;
     background-color: var(--primary-color);
     color: #fff;
+}
+
+.items.theme-icon-red .item .icon-btn:hover {
+    transition-property: background;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-in;
+    font-size: 1.0625em;
+    background-color: #f00;
+    cursor: pointer;
 }
 
 .section {
@@ -352,7 +364,7 @@ ul.item.theme-red>li::before {
 }
 
 .p2-s2 .img-box {
-    height: 500px;
+    min-height: 460px;
     background-image: url(./images/p2_s2_product_figure.png);
 }
 
