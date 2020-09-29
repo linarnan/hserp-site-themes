@@ -1432,3 +1432,85 @@ table.product-compared tbody td.red div.has {
 .about-us {
     line-height: 1.875em;
 }
+
+.section.links-download .title-en{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: -10px;
+}
+
+.section.links-download .links{
+    margin-top: 30px;
+}
+
+
+.section.links-download .links ul li:first-child{
+    margin-left: -20px;
+    margin-bottom: 20px;
+    padding-left: 1.125em;
+    color: var(--primary-color);
+    font-size: 22px;
+}
+
+.section.links-download .links ul li:not(:first-child) a,
+.section.links-download .links ul li:not(:first-child) a:hover {
+    color: #333333;
+}
+
+.section.links-download .links ul li:first-child::marker{
+    content: url('./images/li_arrow_red.svg');
+    padding-right: 30px;
+}
+
+.links-download .downloads .item {
+    padding: 20px;
+    margin-top: 30px;
+    border: 1px solid #c9c9c9;
+    border-top: 4px solid #c9c9c9;
+}
+
+.links-download .downloads .item .icon {
+    background-image: url(./images/links/download-app-01.svg);
+}
+
+.links-download .downloads .item-1 .icon {
+    background-image: url(./images/links/download-app-01.svg);
+}
+
+.links-download .downloads .item-2 .icon {
+    background-image: url(./images/links/download-app-02.svg);
+}
+
+.links-download .downloads .item-3 .icon {
+    background-image: url(./images/links/download-app-03.svg);
+}
+
+.links-download .downloads .item:hover {
+    border-top: 4px solid var(--primary-color);
+}
+
+.links-download .downloads.items .icon-box {
+    text-align: center;
+}
+
+
+.links-download .downloads.items .icon {
+    height: 140px;
+    width: 140px;
+    display: inline-block;
+}
+
+
+.links-download .downloads .txt{
+    text-align: center;
+}
+
+.links-download .downloads .dl{
+    margin-top: 16px;
+    text-align: center;
+}
+
+.links-download .downloads.items.theme-icon-red .icon-btn {
+    height: 32px;
+    line-height: 32px
+}
