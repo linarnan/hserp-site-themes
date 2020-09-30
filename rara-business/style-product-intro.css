@@ -888,6 +888,7 @@ ul.item.theme-red>li::before {
     position: relative;
     background-color: #fff;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    cursor: help;
 }
 
 .questions .question .desc {
@@ -896,13 +897,16 @@ ul.item.theme-red>li::before {
 }
 
 .questions .question .ans {
+    display: none;
     padding: 16px 60px;
     background-color: #f9f9f9;
 }
 
-.questions .question .ans.hide {
-    display: none;
+.questions .question.fold .ans {
+    display: block;
 }
+
+
 
 .questions .question .desc:before {
     content: "Q";
