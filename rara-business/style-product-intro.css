@@ -209,6 +209,10 @@ ul.item>li.empty::before {
 }
 
 
+ul.item.bg-white-style>li::before {
+    content: url('./images/li_arrow_red.svg');
+}
+
 ul.item>li::before {
     content: url('./images/li_arrow_black.svg');
     margin-right: 8px;
