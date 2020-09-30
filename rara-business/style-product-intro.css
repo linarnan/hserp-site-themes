@@ -1184,10 +1184,13 @@ ul.item.theme-red>li::before {
 
 
 .module .module-figure  {
-    position: relative;
     min-height: 300px;
+    height: 100%;
     width: 100%;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .module .module-figure .img-box {
@@ -1196,6 +1199,18 @@ ul.item.theme-red>li::before {
 } 
 
 /* module figures */
+
+.module-figure-common .figure-1 > .img-box{
+    background-image: url(./images/m/p1_m1/p1_m1_figure-1.jpg);
+}
+.module-figure-common .figure-2 > .img-box{
+    background-image: url(./images/m/p1_m1/p1_m1_figure-2.jpg);
+}
+.module-figure-common .figure-3 > .img-box{
+    background-image: url(./images/m/p1_m1/p1_m1_figure-3.jpg);
+}
+
+
 .p1-m1 .figure-1 > .img-box{
     background-image: url(./images/m/p1_m1/p1_m1_figure-1.jpg);
 }
