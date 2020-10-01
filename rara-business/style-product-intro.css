@@ -257,10 +257,10 @@ ul.item.theme-red>li::before {
     display: inline-block;
     width: 250px;
     text-align: center;
-    height: 48px;
-    line-height: 48px;
+    height: 42px;
+    line-height: 42px;
     vertical-align: middle;
-    border-radius: 48px;
+    border-radius: 42px;
     padding: 0 16px;
     margin: 0 16px;
     background-color: var(--primary-color);
@@ -335,26 +335,24 @@ ul.item.theme-red>li::before {
 }
 
 
-.p1-s3 ol {
+/* .p1-s3 ol {
     margin: 0;
+} */
+.p1-s4 > .title {
+    color: #000;
 }
 
-
-
-.p1-s4 .title,
-.p1-s5 .title {
-    text-align: left;
+.p1-s4 > .items > .item > .title {
     font-size: 24px;
-    margin-left: 20px;
     margin-bottom: 30px;
-    color: #333333;
-
 }
 
+.p1-s4 > .items > .item:first-child {
+    border-right: 1px dotted #cccccc;
+}
 
-.p1-s4,
-.p1-s5 {
-    margin-bottom: 30px;
+.p1-s4 {
+    margin-bottom: 40px;
 }
 
 /* 審計簽證 */
