@@ -1142,6 +1142,7 @@ ul.item.theme-red>li::before {
 
 .module {
     padding: 20px auto;
+    margin-bottom: 80px;
 }
 
 .module h3 {
