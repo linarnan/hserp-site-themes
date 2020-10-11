@@ -1042,6 +1042,10 @@ ul.item.theme-red>li::before {
     background-image: url(./images/clients/accountant/taipei-01.png);
 }
 
+.proven .client-2 .img-box{
+    background-image: url(./images/clients/accountant/taipei-29.png);
+}
+
 .proven .client-3 .img-box{
     background-image: url(./images/clients/accountant/taipei-06.png);
 }
@@ -1063,7 +1067,7 @@ ul.item.theme-red>li::before {
 }
 
 .proven .client-8 .img-box{
-    background-image: url(./images/clients/accountant/taipei-05.png);
+    background-image: url(./images/clients/accountant/taipei-15.png);
 }
 
 .proven .client-9 .img-box{
@@ -1078,16 +1082,92 @@ ul.item.theme-red>li::before {
     background-image: url(./images/clients/accountant/taipei-05.png);
 }
 
+.proven .client-12 .img-box{
+    background-image: url(./images/clients/accountant/taipei-32.png);
+}
+
+.proven .client-13 .img-box{
+    background-image: url(./images/clients/accountant/taipei-19.png);
+}
+
 .proven .client-14 .img-box{
     background-image: url(./images/clients/accountant/tainan-02.png);
+}
+
+.proven .client-15 .img-box{
+    background-image: url(./images/clients/accountant/taipei-33.png);
+}
+
+.proven .client-16 .img-box{
+    background-image: url(./images/clients/accountant/taichung-05.png);
+}
+
+.proven .client-17 .img-box{
+    background-image: url(./images/clients/accountant/taichung-08.png);
+}
+
+.proven .client-18 .img-box{
+    background-image: url(./images/clients/accountant/taipei-26.png);
+}
+
+.proven .client-19 .img-box{
+    background-image: url(./images/clients/accountant/taipei-25.png);
+}
+
+.proven .client-20 .img-box{
+    background-image: url(./images/clients/accountant/kao-09.png);
+}
+
+.proven .client-21 .img-box{
+    background-image: url(./images/clients/accountant/tainan-04.png);
+}
+
+.proven .client-22 .img-box{
+    background-image: url(./images/clients/accountant/tainan-06.png);
+}
+
+.proven .client-23 .img-box{
+    background-image: url(./images/clients/accountant/taichung-06.png);
+}
+
+.proven .client-24 .img-box{
+    background-image: url(./images/clients/accountant/taipei-27.png);
 }
 
 .proven .client-25 .img-box{
     background-image: url(./images/clients/accountant/taipei-12.png);
 }
 
-.proven .client-39 .img-box{
-    background-image: url(./images/clients/accountant/kao-09.png);
+.proven .client-26 .img-box{
+    background-image: url(./images/clients/accountant/taipei-13.png);
+}
+
+.proven .client-27 .img-box{
+    background-image: url(./images/clients/accountant/taipei-22.png);
+}
+
+.proven .client-28 .img-box{
+    background-image: url(./images/clients/accountant/kao-07.png);
+}
+
+.proven .client-29 .img-box{
+    background-image: url(./images/clients/accountant/taipei-21.png);
+}
+
+.proven .client-30 .img-box{
+    background-image: url(./images/clients/accountant/taipei-20.png);
+}
+
+.proven .client-31 .img-box{
+    background-image: url(./images/clients/accountant/tainan-11.png);
+}
+
+.proven .client-32 .img-box{
+    background-image: url(./images/clients/accountant/tainan-12.png);
+}
+
+.proven .client-33 .img-box{
+    background-image: url(./images/clients/accountant/kao-16.png);
 }
 
 .proven .company-1 .img-box{
@@ -1096,11 +1176,26 @@ ul.item.theme-red>li::before {
 .proven .company-2 .img-box{
     background-image: url(./images/clients/company/taichung-company-01.png);
 }
+.proven .company-3 .img-box{
+    background-image: url(./images/clients/company/taipei-company-09.png);
+}
+.proven .company-4 .img-box{
+    background-image: url(./images/clients/company/tainan-company-03.png);
+}
 .proven .company-5 .img-box{
     background-image: url(./images/clients/company/taipei-company-02.png);
 }
 .proven .company-6 .img-box{
     background-image: url(./images/clients/company/taichung-company-02.png);
+}
+.proven .company-7 .img-box{
+    background-image: url(./images/clients/company/taipei-company-08.png);
+}
+.proven .company-8 .img-box{
+    background-image: url(./images/clients/company/taipei-company-10.png);
+}
+.proven .company-9 .img-box{
+    background-image: url(./images/clients/company/taipei-company-18.png);
 }
 .proven .company-10 .img-box{
     background-image: url(./images/clients/company/taipei-company-03.png);
@@ -1108,21 +1203,35 @@ ul.item.theme-red>li::before {
 .proven .company-11 .img-box{
     background-image: url(./images/clients/company/taichung-company-03.png);
 }
+.proven .company-12 .img-box{
+    background-image: url(./images/clients/company/taipei-company-14.png);
+}
 .proven .company-13 .img-box{
     background-image: url(./images/clients/company/taipei-company-04.png);
+}
+.proven .company-14 .img-box{
+    background-image: url(./images/clients/company/taichung-company-05.png);
 }
 .proven .company-15 .img-box{
     background-image: url(./images/clients/company/taichung-company-04.png);
 }
+.proven .company-16 .img-box{
+    background-image: url(./images/clients/company/taipei-company-06.png);
+}
+.proven .company-17 .img-box{
+    background-image: url(./images/clients/company/taipei-company-13.png);
+}
+.proven .company-18 .img-box{
+    background-image: url(./images/clients/company/taipei-company-07.png);
+}
+
 .proven .company-19 .img-box{
     background-image: url(./images/clients/company/taipei-company-06.png);
 }
 .proven .company-20 .img-box{
     background-image: url(./images/clients/company/taichung-company-05.png);
 }
-.proven .company-22 .img-box{
-    background-image: url(./images/clients/company/taipei-company-07.png);
-}
+
 .proven .company-31 .img-box{
     background-image: url(./images/clients/p2_s2_product_figure.pngcompany/taipei-company-10.png);
 }
