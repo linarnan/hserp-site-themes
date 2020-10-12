@@ -67,4 +67,16 @@ jQuery(document).ready(function ($) {
     $('.questions .question').click(function () {
         $(this).toggleClass('fold');
     })
+
+    var slide_params = {
+        autoplay: true,
+        dots: true,
+        infinite: true,
+        speed: 400,
+        arrows: false,
+        slidesToShow: 1,
+        adaptiveHeight: true
+    };
+    $('.slides-1').slick(slide_params);
+    $('.slides-2').slick(slide_params);
 });

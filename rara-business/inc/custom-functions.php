@@ -220,6 +220,11 @@ function rara_business_scripts() {
     if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
         wp_enqueue_script( 'comment-reply' );
     }
+
+    wp_enqueue_style( 'slick', get_template_directory_uri(). '/css/slick/slick.css', array(), '1.8.1' );
+    wp_enqueue_style( 'slick-theme', get_template_directory_uri(). '/css/slick/slick-theme.css', array('slick'), '1.8.1' );
+    wp_enqueue_script( 'slick', get_template_directory_uri() . '/js/slick.min.js', array( 'jquery' ), '1.8.1', true );
+    
 }
 add_action( 'wp_enqueue_scripts', 'rara_business_scripts' );
 
