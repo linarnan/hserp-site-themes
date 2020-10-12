@@ -764,14 +764,45 @@ ul.item.theme-red>li::before {
     margin-top: 160px;
 }
 
+.serviceflow-s2{
+    background-color: #fee5e5; 
+}
+
+.serviceflow-s2 .item.product-figure .img-box{
+    display: inline-block;
+    min-height: 260px;
+    cursor: pointer;
+}
+
+/* .serviceflow .infographic .img-box{
+    min-height: 300px;
+    background-image: url(./images/serviceflow_ver2.png);
+} */
+
+.serviceflow-s2 .item-1.product-figure .img-box{
+    background-image: url(./images/serviceflow_step_01.png);
+}
+
+.serviceflow-s2 .item-2.product-figure .img-box{
+    background-image: url(./images/serviceflow_step_02.png);
+}
+
+.serviceflow-s2 .item-3.product-figure .img-box{
+    background-image: url(./images/serviceflow_step_03.png);
+}
+ 
+.serviceflow .step-anchor {
+    margin-bottom: 80px;
+}
+
 .step {
     text-align: center;
     color: #999999;
 }
 
-.serviceflow,
-.serviceflow,
-.serviceflow {
+.serviceflow-s3,
+.serviceflow-s4,
+.serviceflow-s5 {
     margin-bottom: 80px;
 }
 
@@ -812,10 +843,7 @@ ul.item.theme-red>li::before {
     text-align: center;
 }
 
-.serviceflow .infographic .img-box{
-    min-height: 300px;
-    background-image: url(./images/serviceflow_ver2.png);
-}
+
 
 .serviceflow-s3 .item-1 .icon {
     background-image: url(./images/service-step1-contact.png.svg);
