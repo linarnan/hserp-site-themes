@@ -768,9 +768,10 @@ ul.item.theme-red>li::before {
     background-color: #fee5e5; 
 }
 
-.serviceflow-s2 .item.product-figure .img-box{
+.serviceflow-s2 .item.product-figure .icon{
     display: inline-block;
     min-height: 260px;
+    min-width: 300px;
     cursor: pointer;
 }
 
@@ -779,15 +780,15 @@ ul.item.theme-red>li::before {
     background-image: url(./images/serviceflow_ver2.png);
 } */
 
-.serviceflow-s2 .item-1.product-figure .img-box{
+.serviceflow-s2 .item-1.product-figure .icon{
     background-image: url(./images/serviceflow_step_01.png);
 }
 
-.serviceflow-s2 .item-2.product-figure .img-box{
+.serviceflow-s2 .item-2.product-figure .icon{
     background-image: url(./images/serviceflow_step_02.png);
 }
 
-.serviceflow-s2 .item-3.product-figure .img-box{
+.serviceflow-s2 .item-3.product-figure .icon{
     background-image: url(./images/serviceflow_step_03.png);
 }
  
@@ -1263,19 +1264,6 @@ ul.item.theme-red>li::before {
 .proven .company-31 .img-box{
     background-image: url(./images/clients/p2_s2_product_figure.pngcompany/taipei-company-10.png);
 }
-.proven .company-40 .img-box{
-    background-image: url(./images/clients/company/taipei-company-13.png);
-}
-.proven .company-43 .img-box{
-    background-image: url(./images/clients/company/taipei-company-14.png);
-}
-.proven .company-45 .img-box{
-    background-image: url(./images/clients/company/taipei-company-18.png);
-}
-
-
-
-
 
 
 
