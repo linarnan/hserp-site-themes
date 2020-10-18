@@ -472,17 +472,19 @@ ul.item.theme-red>li::before {
     color: #333333;
 }
 
-
-.p4-s2 .item-1 .icon::after {
-    content: url(./images/p4-s2-item1-icon.svg);
+.p4-s2 .item .icon{ 
+    display: inline-block;
+    width: 140px;
+    height: 140px;
 }
-
-.p4-s2 .item-2 .icon::after {
-    content: url(./images/p4-s2-item2-icon.svg);
+.p4-s2 .item-1 .icon {
+    background-image: url(./images/icon-implement.png);
 }
-
-.p4-s2 .item-3 .icon::after {
-    content: url(./images/p4-s2-item3-icon.svg);
+.p4-s2 .item-2 .icon {
+    background-image: url(./images/icon-easy.png);
+}
+.p4-s2 .item-3 .icon {
+    background-image: url(./images/icon-function.png);
 }
 
 .p4-s3 {
