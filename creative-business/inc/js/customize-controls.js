@@ -69,7 +69,7 @@ jQuery(document).ready(function ($) {
     })
 
     var slide_params = {
-        autoplay: true,
+        autoplay: false,
         dots: true,
         infinite: true,
         speed: 400,
