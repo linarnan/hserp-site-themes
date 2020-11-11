@@ -547,6 +547,10 @@ ul.item.theme-red>li::before {
     border-right: 1px dotted #333333;
 }
 
+.section-module-selection > .container > .items > .item.no-sep:first-child {
+    border-right: none;
+}
+
 
 .section:last-child {
     margin-bottom: 80px;
@@ -739,6 +743,28 @@ ul.item.theme-red>li::before {
 
 
 /* 審計簽證 */
+
+.p2-m1 .figure-1 > .img-box{
+    background-image: url(./images/m/p2_m1/p2_m1-row-1-feature.png);
+}
+.p2-m1 .figure-2 > .img-box{
+    background-image: url(./images/m/p2_m1/p2_m1-row-2-feature.png);
+}
+
+.p2-m2 .figure-1 > .img-box{
+    background-image: url(./images/m/p2_m2/p2_m2-row-1-feature.png);
+}
+.p2-m2 .figure-2 > .img-box{
+    background-image: url(./images/m/p2_m2/p2_m2-row-2-feature.png);
+}
+
+.p2-m3 .figure-1 > .img-box{
+    background-image: url(./images/m/p2_m3/p2_m3-row-1-feature.png);
+}
+.p2-m3 .figure-2 > .img-box{
+    background-image: url(./images/m/p2_m3/p2_m3-row-2-feature.png);
+}
+
 
 .p2-s3 li {
     height: 160px;
