@@ -1482,20 +1482,49 @@ ul.item.theme-red>li::before {
 }
 
 /* 服務流程 */
-.serviceflow-s1 {
+.serviceflow.module-banner {
     position: relative;
-    height: 360px;
+    height: 520px;
     width: 100%;
     background-image: url(./images/serviceflow_section_1_bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover !important;
     color: #fff;
+    display: flex;
+    flex-direction: row;
 }
 
-.serviceflow-s1 .title {
-    margin-top: 160px;
+.serviceflow.module-banner .txt-content{
+    display: block;
+    flex: 1 1 100%;
+    margin: 0 auto;
+    margin-right: 80px;
+    padding-top: 120px; 
 }
+.serviceflow.module-banner .txt-content .title{
+    text-align: right;
+}
+.serviceflow.module-banner .txt-content .title-sub{
+    text-align: right;
+}
+
+.serviceflow.module-banner .txt-content .infographic {
+    padding-left: 40% 
+}
+
+.serviceflow.module-banner .item-1.product-figure .icon {
+    background-image: url(./images/serviceflow_step_01.png);
+}
+
+.serviceflow.module-banner .item-2.product-figure .icon {
+    background-image: url(./images/serviceflow_step_02.png);
+}
+
+.serviceflow.module-banner .item-3.product-figure .icon {
+    background-image: url(./images/serviceflow_step_03.png);
+}
+
 
 .serviceflow-s2 {
     background-color: #fee5e5;
@@ -1513,17 +1542,7 @@ ul.item.theme-red>li::before {
     background-image: url(./images/serviceflow_ver2.png);
 } */
 
-.serviceflow-s2 .item-1.product-figure .icon {
-    background-image: url(./images/serviceflow_step_01.png);
-}
 
-.serviceflow-s2 .item-2.product-figure .icon {
-    background-image: url(./images/serviceflow_step_02.png);
-}
-
-.serviceflow-s2 .item-3.product-figure .icon {
-    background-image: url(./images/serviceflow_step_03.png);
-}
 
 .serviceflow .step-anchor {
     margin-bottom: 80px;
