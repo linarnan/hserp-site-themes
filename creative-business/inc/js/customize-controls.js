@@ -79,4 +79,9 @@ jQuery(document).ready(function ($) {
     };
     $('.slides-1').slick(slide_params);
     $('.slides-2').slick(slide_params);
+
+    $('.serviceflow .step-btn-wrapper').hover(function () {
+        $('.serviceflow .step-btn-wrapper').removeClass('active');
+        $(this).addClass('active');
+    })
 });

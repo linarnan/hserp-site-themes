@@ -1500,34 +1500,18 @@ ul.item.theme-red>li::before {
     flex: 1 1 100%;
     margin: 0 auto;
     margin-right: 80px;
-    padding-top: 120px; 
+    padding-top: 100px; 
 }
-.serviceflow.module-banner .txt-content .title{
+.serviceflow.module-banner .txt-content  > .title{
     text-align: right;
 }
-.serviceflow.module-banner .txt-content .title-sub{
+.serviceflow.module-banner .txt-content  > .title-sub{
     text-align: right;
 }
 
 .serviceflow.module-banner .txt-content .infographic {
+    margin-top: 60px;
     padding-left: 40% 
-}
-
-.serviceflow.module-banner .item-1.product-figure .icon {
-    background-image: url(./images/serviceflow_step_01.png);
-}
-
-.serviceflow.module-banner .item-2.product-figure .icon {
-    background-image: url(./images/serviceflow_step_02.png);
-}
-
-.serviceflow.module-banner .item-3.product-figure .icon {
-    background-image: url(./images/serviceflow_step_03.png);
-}
-
-
-.serviceflow-s2 {
-    background-color: #fee5e5;
 }
 
 .serviceflow-s2 .item.product-figure .icon {
@@ -1537,18 +1521,17 @@ ul.item.theme-red>li::before {
     cursor: pointer;
 }
 
-/* .serviceflow .infographic .img-box{
-    min-height: 300px;
-    background-image: url(./images/serviceflow_ver2.png);
-} */
 
-
+.serviceflow-step2 {
+    background-color: #f9f9f9;
+    padding: 50px;
+}
 
 .serviceflow .step-anchor {
     margin-bottom: 80px;
 }
 
-.step {
+.serviceflow .step {
     text-align: center;
     color: #999999;
 }
@@ -1596,52 +1579,88 @@ ul.item.theme-red>li::before {
     text-align: center;
 }
 
-
-
-.serviceflow-s3 .item-1 .icon {
-    background-image: url(./images/service-step1-contact.png.svg);
+.serviceflow .step-btn-wrapper .step-btn-box{
+    width: 180px;
+    height: 180px;
+    border-radius: 300px;
+    border: 1px solid #fff;
+    color: #fff;
 }
 
-.serviceflow-s3 .item-2 .icon {
-    background-image: url(./images/service-step1-demo.png.svg);
+
+.serviceflow .infographic a:hover {
+    text-decoration: none;
+    color: none;
 }
 
-.serviceflow-s3 .item-3 .icon {
-    background-image: url(./images/service-step1-plan.png.svg);
+.serviceflow .step-btn-wrapper .step-num{
+    margin-top: -20px;
+    font-size: 88px;
+    font-weight: 900;
 }
 
-.serviceflow-s4 .item-1 .icon {
-    background-image: url(./images/service-step2-contract.png.svg);
-}
-
-.serviceflow-s4 .item-2 .icon {
-    background-image: url(./images/service-step2-install.png.svg);
-}
-
-.serviceflow-s5 .item-1 .icon {
-    background-image: url(./images/service-step3-contact.png.svg);
-}
-
-.serviceflow-s5 .item-2 .icon {
-    background-image: url(./images/service-step3-demo.png.svg);
-}
-
-.serviceflow-s5 .item-3 .icon {
-    background-image: url(./images/service-step3-upgrade.png.svg);
-}
-
-.serviceflow-s5 .item .desc {
+.serviceflow.module-banner .step-btn-wrapper .title{
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 60px;
+    margin-left: 10px;
     text-align: center;
 }
 
-.serviceflow-s2 {
-    padding: 40px 80px;
+.serviceflow .step-btn-wrapper.active .step-btn-box{
+    background-color: #fff;
 }
 
-.serviceflow-s2 .title,
-.serviceflow-s3 .title,
-.serviceflow-s4 .title,
-.serviceflow-s5 .title {
+.serviceflow .step-btn-wrapper.active .step-num {
+    color: #000;
+}
+
+.serviceflow .step-btn-wrapper.active .title {
+    color: var(--primary-color);
+}
+
+
+.serviceflow-step1 .item-1 .icon {
+    background-image: url(./images/service-step1-contact.png.svg);
+}
+
+.serviceflow-step1 .item-2 .icon {
+    background-image: url(./images/service-step1-demo.png.svg);
+}
+
+.serviceflow-step1 .item-3 .icon {
+    background-image: url(./images/service-step1-plan.png.svg);
+}
+
+.serviceflow-step2 .item-1 .icon {
+    background-image: url(./images/service-step2-contract.png.svg);
+}
+
+.serviceflow-step2 .item-2 .icon {
+    background-image: url(./images/service-step2-install.png.svg);
+}
+
+.serviceflow-step3 .item-1 .icon {
+    background-image: url(./images/service-step3-contact.png.svg);
+}
+
+.serviceflow-step3 .item-2 .icon {
+    background-image: url(./images/service-step3-demo.png.svg);
+}
+
+.serviceflow-step3 .item-3 .icon {
+    background-image: url(./images/service-step3-upgrade.png.svg);
+}
+
+.serviceflow-step3 .item .desc {
+    text-align: center;
+}
+
+.serviceflow-step1 .title,
+.serviceflow-step2 .title,
+.serviceflow-step3 .title {
+    font-weight: 600;
+    margin-bottom: 60px;
     color: #000;
 }
 
