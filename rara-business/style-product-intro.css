@@ -1103,8 +1103,13 @@ ul.item.theme-red>li::before {
 .p3.features-wrapper .module-6 .icon {
     background-image: url(./images/m/p3/icon-erp-06.png);
 }
+
 .p3.features-wrapper .module-6 .img-box {
     background-image: url(./images/m/p3/erp-flowchart-06.png);
+}
+
+.p3.section-emphasis {
+    background-image: url(./images/m/p3/p3-feature-emphasis.png);
 }
 
 /* 我算算產品  */
