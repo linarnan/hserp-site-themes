@@ -2201,7 +2201,7 @@ table.product-compared tbody td.red div.has {
 
 /* hi-help */
 
-.hi-help .section-1 {
+.hi-help.section-1 {
     position: relative;
     min-height: 600px;
     background-image: url(./images/helpdesk-bg-1.png);
@@ -2211,19 +2211,19 @@ table.product-compared tbody td.red div.has {
 }
 
 
-.hi-help .section-1 .illustration {
+.hi-help.section-1 .illustration {
     position: absolute;
     left: 140px;
     top: 80px;
 }
 
-.hi-help .section-1 .illustration .img-box {
+.hi-help.section-1 .illustration .img-box {
     height: 400px;
     width: 400px;
     background-image: url(./images/hi-help/hi-help-illustration-1.png);
 }
 
-.hi-help .section-1 .main-content {
+.hi-help.section-1 .main-content {
     position: absolute;
     display: block;
     left: 620px;
@@ -2233,8 +2233,8 @@ table.product-compared tbody td.red div.has {
 }
 
 
-.hi-help .section-1 .main-content .title,
-.hi-help .section-1 .main-content .title-sub {
+.hi-help.section-1 .main-content .title,
+.hi-help.section-1 .main-content .title-sub {
     text-align: left;
 }
 
@@ -2243,36 +2243,36 @@ table.product-compared tbody td.red div.has {
     font-weight: 400;
 }
 
-.hi-help .section-2 .download-wrapper {
+.hi-help.section-2 .download-wrapper {
     margin-top: 30px;
 }
 
-.hi-help .section-2 .download-wrapper .download {
+.hi-help.section-2 .download-wrapper .download {
     background-color: #2aa0e0;
 }
 
-.hi-help .section-2 .product-intro .icon-1 {
+.hi-help.section-2 .product-intro .icon-1 {
     background-image: url(./images/hi-help/hi-help_s2-icon-1.svg);
 }
 
-.hi-help .section-2 .product-intro .icon-2 {
+.hi-help.section-2 .product-intro .icon-2 {
     background-image: url(./images/hi-help/hi-help_s2-icon-2.svg);
 }
 
-.hi-help .section-2 .product-intro .icon-3 {
+.hi-help.section-2 .product-intro .icon-3 {
     background-image: url(./images/hi-help/hi-help_s2-icon-3.svg);
 }
 
-.hi-help .section-3 {
+.hi-help.section-3 {
     min-height: 600px;
 }
 
-.hi-help .section-1 .container,
-.hi-help .section-3 .container {
+.hi-help.section-1 .container,
+.hi-help.section-3 .container {
     position: relative;
 }
 
-.hi-help .section-3 .illustration {
+.hi-help.section-3 .illustration {
     position: absolute;
     display: inline-block;
     width: 500px;
@@ -2281,39 +2281,55 @@ table.product-compared tbody td.red div.has {
     left: 600px;
 }
 
-.hi-help .section-3 .illustration .img-box {
+.hi-help.section-3 .illustration .img-box {
     height: 600px;
     background-image: url(./images/hi-help/hi-help_s3_illustration.png);
     background-position: bottom;
 
 }
 
-.hi-help .section-3 .app-download {
+.hi-help.section-3 .app-download {
     margin-top: 100px
 }
 
-.hi-help .section-3 .app-download>div .img-box,
-.hi-help .section-3 .app-download>div {
+.hi-help.section-3 .app-download>div .img-box,
+.hi-help.section-3 .app-download>div {
     width: 160px;
     height: 100px;
+    min-height: 100px;
     display: inline-block;
 }
 
 
-.hi-help .section-3 .app-download>div.apple {
+.hi-help.section-3 .app-download>div.apple {
     margin-left: 20px;
 }
 
-.hi-help .section-3 .app-download .apple .img-box {
+.hi-help.section-3 .app-download .apple .img-box {
     background-image: url(./images/hi-help/apple_store_download.png);
 }
 
-.hi-help .section-3 .app-download .google .img-box {
+.hi-help.section-3 .app-download .google .img-box {
     background-image: url(./images/hi-help/google_play_download.png);
 }
 
+.hi-help .contact-us-wrapper .text-content .contact-us-please {
+    background-color: #126afb;
+}
+.hi-help .contact-us-wrapper a {
+    text-decoration: none;
+}
+.hi-help .contact-us-wrapper a:hover {
+    text-decoration: none;
+}
 
-.hi-help .section-3 .main-content {
+.hi-help .contact-us-wrapper ul {
+    margin-left: 6px;
+}
+
+
+
+.hi-help.section-3 .main-content {
     position: absolute;
     display: inline-block;
     width: 500px;
@@ -2321,20 +2337,20 @@ table.product-compared tbody td.red div.has {
     left: 80px;
 }
 
-.hi-help .section-3 .title,
-.hi-help .section-3 .title-sub {
+.hi-help.section-3 .title,
+.hi-help.section-3 .title-sub {
     text-align: left;
 }
 
-.hi-help .section-4 .product-intro .icon-1 {
+.hi-help.section-4 .product-intro .icon-1 {
     background-image: url(./images/hi-help/hi-help_s4-icon-1.svg);
 }
 
-.hi-help .section-4 .product-intro .icon-2 {
+.hi-help.section-4 .product-intro .icon-2 {
     background-image: url(./images/hi-help/hi-help_s4-icon-2.svg);
 }
 
-.hi-help .section-4 .product-intro .icon-3 {
+.hi-help.section-4 .product-intro .icon-3 {
     background-image: url(./images/hi-help/hi-help_s4-icon-3.svg);
 }
 
