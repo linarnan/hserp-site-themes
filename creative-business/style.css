@@ -1545,6 +1545,8 @@ a:focus {
 #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-megamenu>ul.mega-sub-menu {
     position: fixed;
     top: 65px;
+    background-clip: content-box;
+    border-top: 20px solid transparent;
 }
 
 /* specific clients menu */
