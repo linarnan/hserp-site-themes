@@ -257,6 +257,10 @@ ul.item.theme-red>li::before {
 .items.flex.three-col .item {
     flex: 0 1 33%;
 }
+.items.flex.three-col.center .item {
+    text-align: center;
+}
+
 
 .items.flex.four-col .item {
     flex: 0 1 25%;
