@@ -896,6 +896,13 @@ ul.item.theme-red>li::before {
     background-image: url(./images/m/p1_m1/p1_m1_figure-3.jpg);
 }
 
+.p1-m2.section-summary .contact-us-wrapper .figure-wrapper .img-box {
+    background-image: url(./images/m/p1_m2/video_play.png);
+    background-size: contain;
+    background-position: center center;
+    border: 1px solid grey;
+}
+
 .p1-m2 .figure-1>.img-box {
     background-image: url(./images/m/p1_m2/p1_m2-row-1-figure.png);
 }
