@@ -617,8 +617,8 @@ ul.item.theme-red>li::before {
 
 .section-contact-us .contact-us-wrapper .text-wrapper {
     flex: 1 0 58%;
-
 }
+
 
 .contact-us-wrapper .text-content {
     margin: 40px 20px;
@@ -660,6 +660,8 @@ ul.item.theme-red>li::before {
     flex: 1 0 42%;
 }
 
+
+
 .section-contact-us .contact-us-wrapper .figure-wrapper .img-box {
     background-image: url(./images/section-customer-service.jpg);
     width: 100%;
@@ -669,6 +671,28 @@ ul.item.theme-red>li::before {
     border-top-right-radius: var(--section-radius);
     border-bottom-right-radius: var(--section-radius);
 }
+
+.section-summary {
+    min-height: 320px;
+}
+
+.section-summary.section-contact-us .contact-us-wrapper {
+    min-height: 320px;
+}
+
+.section-summary .contact-us-wrapper .text-content {
+    margin-top: 90px;
+}
+
+.section-summary .txt-wrapper {
+    margin-top: 60px;
+}
+
+.section-summary .contact-us-wrapper .figure-wrapper .img-box {
+    background-image: url(./images/section-customer-service.jpg);
+    min-height: 320px;
+}
+
 
 .section-module-selection {
     background-color: #f9f9f9;
@@ -2054,11 +2078,11 @@ ul.item.theme-red>li::before {
 }
 
 .proven .company-19 .img-box {
-    background-image: url(./images/clients/company/taipei-company-06.png);
+    background-image: url(./images/clients/company/taichung-compnay-19.png);
 }
 
 .proven .company-20 .img-box {
-    background-image: url(./images/clients/company/taichung-company-05.png);
+    background-image: url(./images/clients/company/taipei-company-20.png);
 }
 
 .proven .company-31 .img-box {
