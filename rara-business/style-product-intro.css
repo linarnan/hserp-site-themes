@@ -132,8 +132,12 @@
 
 .column-3 .item .desc {
     padding: 8px 20px;
+    text-align: left;
+}
+.column-3.center .item .desc {
     text-align: center;
 }
+
 
 .column-2 .item-1,
 .column-2 .item-2 {
