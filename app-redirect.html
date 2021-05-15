@@ -1,0 +1,16 @@
+<html>
+  <script>
+    var isIOS = /(iPhone|iPod|iPad)/i.test(navigator.platform);
+
+    if (isIOS) {
+      console.log("is ios");
+      location.href = "https://apps.apple.com/tw/app/id1527038698";
+    } else {
+      location.href =
+        "https://play.google.com/store/apps/details?id=com.zego.talk";
+    }
+  </script>
+  <body>
+    Redirect ....
+  </body>
+</html>
