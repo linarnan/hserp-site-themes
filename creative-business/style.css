@@ -29,6 +29,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
     --department-bg-color: #333333;
     --primary-color-rgb: 255, 0, 0;
     --primary-font: 'Noto Sans TC', 'Open Sans', sans-serif;
+	--primary-menu-color: #333333;
+	--primary-menu-bg-color: #111111;
     --secondary-font: 'Source Sans Pro', sans-serif;
     --font-color: #595f5f;
     --emphasis-number-font: 'Rubik';
@@ -1384,7 +1386,7 @@ a:focus {
     }
 
     .responsive-menu-holder {
-        background: var(--primary-color);
+        background: var(--primary-menu-bg-color);
     }
 
     .site-header .header-t .responsive-menu-holder .btn-buy {
@@ -1596,19 +1598,19 @@ a:focus {
 
 #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-megamenu>ul.mega-sub-menu>li.mega-menu-item li.mega-menu-item>a.mega-menu-link:hover,
 #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-megamenu>ul.mega-sub-menu li.mega-menu-column>ul.mega-sub-menu>li.mega-menu-item li.mega-menu-item>a.mega-menu-link:hover {
-    color: var(--primary-color);
+    color: var(--primary-menu-color);
     font-weight: 600;
     
 }
 
 #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item.mega-current-menu-item.mega-current_page_item>a.mega-menu-link {
-    color: var(--primary-color);
+    color: var(--primary-menu-color);
 }
 
 #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item.mega-current-menu-item.mega-current_page_item>a.mega-menu-link,
 #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item.mega-current-menu-ancestor.mega-current_page_ancestor>a.mega-menu-link,
 #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item.mega-current-page-ancestor.mega-current_page_item>a.mega-menu-link {
-    color: var(--primary-color);
+    color: var(--primary-menu-color);
 }
 
 
@@ -1644,4 +1646,28 @@ a:focus {
     width: 120px;
     border: 1px solid #ccc;
     transition: 1.6s;
+}
+
+
+@media only screen and (max-width: 400px) {
+
+.category-container li.cat-item{
+	margin-bottom: 20px;
+}
+
+.clients-container .client-box {
+    flex: 0 0 50%;
+    max-width: 46%;
+    padding: 0;
+    margin: 5px;
+}
+
+.clients-container .client-box .img-box {
+    width: 100%;
+    height: 60px;
+}
+.product-intro {
+    flex: 0 0 100%;
+}
+
 }
